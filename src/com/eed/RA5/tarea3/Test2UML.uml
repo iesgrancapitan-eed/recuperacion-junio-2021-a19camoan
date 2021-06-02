@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_U8cZMLvUEeuG9pmp9hD-gA" name="Test2UML">
+    <eAnnotations xmi:id="_VBf4ULvUEeuG9pmp9hD-gA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_VBgfYLvUEeuG9pmp9hD-gA" source="codegen">
+        <details xmi:id="_VBgfYbvUEeuG9pmp9hD-gA" key="codegenDirectory" value="/Test2UML/src"/>
+        <details xmi:id="_VK8vQLvUEeuG9pmp9hD-gA" key="AssociatedSourceCode" value="/Test2UML/src/ejercicio5_3/Fraccion.java;799786026/1;/Test2UML/src/ejercicio5_3/Mates.java;3233941849/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_VHWBoLvUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_VHWosLvUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_VHWosbvUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_VHWosrvUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_VHWos7vUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_VHWotLvUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_VHWotbvUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_VHXPwLvUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_VHXPwbvUEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_VHX20LvUEeuG9pmp9hD-gA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_VHX20bvUEeuG9pmp9hD-gA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_VIKhALvUEeuG9pmp9hD-gA" name="Scanner"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_VHd9cLvUEeuG9pmp9hD-gA" name="ejercicio5_3">
+      <packagedElement xmi:type="uml:Class" xmi:id="_VHpjoLvUEeuG9pmp9hD-gA" name="Fraccion">
+        <ownedAttribute xmi:id="_VITq8LvUEeuG9pmp9hD-gA" name="s" visibility="package" type="_VIKhALvUEeuG9pmp9hD-gA" association="_VIf4MLvUEeuG9pmp9hD-gA">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_VIUSALvUEeuG9pmp9hD-gA" value="new Scanner(System.in)"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_VIU5EbvUEeuG9pmp9hD-gA" name="numerador" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_VIVgIbvUEeuG9pmp9hD-gA" name="denominador" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIYjcLvUEeuG9pmp9hD-gA" name="Fraccion" specification="_VHqxwLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIYjcbvUEeuG9pmp9hD-gA" name="numerador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VIYjcrvUEeuG9pmp9hD-gA" name="denominador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VIYjc7vUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+          <language>java</language>
+          <body>this.numerador = numerador;&#xD;
+ this.denominador = denominador;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIZKgLvUEeuG9pmp9hD-gA" name="Fraccion" specification="_VHtOALvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIZKgbvUEeuG9pmp9hD-gA" name="numerador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VIZKgrvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+          <language>java</language>
+          <body>this.numerador = numerador;&#xD;
+ this.denominador = 1;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIZxkLvUEeuG9pmp9hD-gA" name="getDenominador" specification="_VHt1E7vUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIZxkbvUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return denominador;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIZxkrvUEeuG9pmp9hD-gA" name="getNumerador" specification="_VHucIbvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIZxk7vUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return numerador;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIZxlLvUEeuG9pmp9hD-gA" name="setDenominador" specification="_VHvDMbvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIZxlbvUEeuG9pmp9hD-gA" name="denominador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>while (denominador == 0) {&#xD;
+   System.out.println(&quot;Introduzca otro denominador: &quot;);&#xD;
+   denominador = s.nextInt();&#xD;
+ }&#xD;
+&#xD;
+ this.denominador = denominador;&#xD;
+&#xD;
+ s.close();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIZxlrvUEeuG9pmp9hD-gA" name="setNumerador" specification="_VHvqQbvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIZxl7vUEeuG9pmp9hD-gA" name="numerador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.numerador = numerador;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIaYoLvUEeuG9pmp9hD-gA" name="toString" specification="_VHwRULvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIaYobvUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return &quot; &quot; + this.numerador + &quot;\n&quot; + &#xD;
+     &quot;----&quot; + &quot;\n&quot; + &#xD;
+     &quot; &quot; + this.denominador + &quot;\n&quot;;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIaYorvUEeuG9pmp9hD-gA" name="result" specification="_VHw4YLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIaYo7vUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return (double)(this.numerador / this.denominador);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIaYpLvUEeuG9pmp9hD-gA" name="multiplicacion" specification="_VIMWMLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIaYpbvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <ownedParameter xmi:id="_VIaYprvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+          <language>java</language>
+          <body>return new Fraccion (this.numerador * f.numerador, this.denominador * f.denominador);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIa_sLvUEeuG9pmp9hD-gA" name="suma" specification="_VINkULvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIa_sbvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <ownedParameter xmi:id="_VIa_srvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+          <language>java</language>
+          <body>return new Fraccion (((this.numerador * f.denominador) + (this.denominador * f.numerador)) , (this.denominador * f.denominador));&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIa_s7vUEeuG9pmp9hD-gA" name="resta" specification="_VIOLYLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIa_tLvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <ownedParameter xmi:id="_VIa_tbvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+          <language>java</language>
+          <body>return new Fraccion (((this.numerador * f.denominador) - (this.denominador * f.numerador)) , (this.denominador * f.denominador));&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIbmwLvUEeuG9pmp9hD-gA" name="mcd" specification="_VHxfcLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIbmwbvUEeuG9pmp9hD-gA" name="a">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VIbmwrvUEeuG9pmp9hD-gA" name="b">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VIbmw7vUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>a = Math.abs(a);&#xD;
+ b = Math.abs(b);&#xD;
+&#xD;
+ while (b > 0) {&#xD;
+   int r = a % b;&#xD;
+   a = b;&#xD;
+   b = r;&#xD;
+ }&#xD;
+ return a;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIcN0LvUEeuG9pmp9hD-gA" name="simplifica" specification="_VIOycLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIcN0bvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <language>java</language>
+          <body>int mcd = Fraccion.mcd(this.numerador, this.denominador);&#xD;
+&#xD;
+ this.numerador /= mcd;&#xD;
+ this.denominador /= mcd;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_VHqxwLvUEeuG9pmp9hD-gA" name="Fraccion" method="_VIYjcLvUEeuG9pmp9hD-gA">
+          <eAnnotations xmi:id="_VHrY0rvUEeuG9pmp9hD-gA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_VHrY07vUEeuG9pmp9hD-gA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_VHrY0LvUEeuG9pmp9hD-gA" name="numerador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VHrY0bvUEeuG9pmp9hD-gA" name="denominador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VHrY1LvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VHtOALvUEeuG9pmp9hD-gA" name="Fraccion" method="_VIZKgLvUEeuG9pmp9hD-gA">
+          <eAnnotations xmi:id="_VHt1ELvUEeuG9pmp9hD-gA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_VHt1EbvUEeuG9pmp9hD-gA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_VHtOAbvUEeuG9pmp9hD-gA" name="numerador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VHt1ErvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VHt1E7vUEeuG9pmp9hD-gA" name="getDenominador" method="_VIZxkLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VHucILvUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VHucIbvUEeuG9pmp9hD-gA" name="getNumerador" method="_VIZxkrvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VHvDMLvUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VHvDMbvUEeuG9pmp9hD-gA" name="setDenominador" method="_VIZxlLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VHvqQLvUEeuG9pmp9hD-gA" name="denominador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VHvqQbvUEeuG9pmp9hD-gA" name="setNumerador" method="_VIZxlrvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VHvqQrvUEeuG9pmp9hD-gA" name="numerador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VHwRULvUEeuG9pmp9hD-gA" name="toString" method="_VIaYoLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VHwRUbvUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VHw4YLvUEeuG9pmp9hD-gA" name="result" method="_VIaYorvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VHw4YbvUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VHxfcLvUEeuG9pmp9hD-gA" name="mcd" visibility="package" isStatic="true" method="_VIbmwLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VHxfcbvUEeuG9pmp9hD-gA" name="a">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VHyGgLvUEeuG9pmp9hD-gA" name="b">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VHyGgbvUEeuG9pmp9hD-gA" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VIMWMLvUEeuG9pmp9hD-gA" name="multiplicacion" method="_VIaYpLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIM9QLvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <ownedParameter xmi:id="_VIM9QbvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VINkULvUEeuG9pmp9hD-gA" name="suma" method="_VIa_sLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VINkUbvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <ownedParameter xmi:id="_VINkUrvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VIOLYLvUEeuG9pmp9hD-gA" name="resta" method="_VIa_s7vUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIOLYbvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <ownedParameter xmi:id="_VIOLYrvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VIOycLvUEeuG9pmp9hD-gA" name="simplifica" method="_VIcN0LvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIOycbvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VH1w4LvUEeuG9pmp9hD-gA" name="Mates">
+        <generalization xmi:id="_VIR1wLvUEeuG9pmp9hD-gA" general="_VHpjoLvUEeuG9pmp9hD-gA"/>
+        <ownedAttribute xmi:id="_VIWuQLvUEeuG9pmp9hD-gA" name="numerador" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_VIXVUbvUEeuG9pmp9hD-gA" name="denominador" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIc04LvUEeuG9pmp9hD-gA" name="Mates" specification="_VH2X8LvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIc04bvUEeuG9pmp9hD-gA" name="numerador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VIc04rvUEeuG9pmp9hD-gA" type="_VH1w4LvUEeuG9pmp9hD-gA" direction="return"/>
+          <language>java</language>
+          <body>super(numerador);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VIdb8LvUEeuG9pmp9hD-gA" name="suma" specification="_VIROsLvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIdb8bvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <ownedParameter xmi:id="_VIdb8rvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+          <language>java</language>
+          <body>return new Fraccion (((this.numerador * f.denominador) + (this.denominador * f.numerador)) , (this.denominador * f.denominador));&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_VH2X8LvUEeuG9pmp9hD-gA" name="Mates" method="_VIc04LvUEeuG9pmp9hD-gA">
+          <eAnnotations xmi:id="_VH2_AbvUEeuG9pmp9hD-gA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_VH2_ArvUEeuG9pmp9hD-gA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_VH2_ALvUEeuG9pmp9hD-gA" name="numerador">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_VH2_A7vUEeuG9pmp9hD-gA" type="_VH1w4LvUEeuG9pmp9hD-gA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VIROsLvUEeuG9pmp9hD-gA" name="suma" method="_VIdb8LvUEeuG9pmp9hD-gA">
+          <ownedParameter xmi:id="_VIROsbvUEeuG9pmp9hD-gA" name="f" type="_VHpjoLvUEeuG9pmp9hD-gA"/>
+          <ownedParameter xmi:id="_VIROsrvUEeuG9pmp9hD-gA" type="_VHpjoLvUEeuG9pmp9hD-gA" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VIf4MLvUEeuG9pmp9hD-gA" name="" memberEnd="_VIf4MbvUEeuG9pmp9hD-gA _VITq8LvUEeuG9pmp9hD-gA">
+        <ownedEnd xmi:id="_VIf4MbvUEeuG9pmp9hD-gA" name="" type="_VHpjoLvUEeuG9pmp9hD-gA" association="_VIf4MLvUEeuG9pmp9hD-gA"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_VBgfYrvUEeuG9pmp9hD-gA">
+      <eAnnotations xmi:id="_VBhGcLvUEeuG9pmp9hD-gA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_VBhGcbvUEeuG9pmp9hD-gA" base_Package="_U8cZMLvUEeuG9pmp9hD-gA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_VILvILvUEeuG9pmp9hD-gA" base_Element="_VIKhALvUEeuG9pmp9hD-gA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_VIU5ELvUEeuG9pmp9hD-gA" base_Element="_VITq8LvUEeuG9pmp9hD-gA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_VIVgILvUEeuG9pmp9hD-gA" base_Element="_VIU5EbvUEeuG9pmp9hD-gA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_VIWHMLvUEeuG9pmp9hD-gA" base_Element="_VIVgIbvUEeuG9pmp9hD-gA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_VIXVULvUEeuG9pmp9hD-gA" base_Element="_VIWuQLvUEeuG9pmp9hD-gA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_VIX8YLvUEeuG9pmp9hD-gA" base_Element="_VIXVUbvUEeuG9pmp9hD-gA"/>
+  <UMLLabProfile:Reference xmi:id="_VIhGULvUEeuG9pmp9hD-gA" base_Element="_VIf4MLvUEeuG9pmp9hD-gA"/>
+</xmi:XMI>
