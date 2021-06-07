@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_K_3eoLL9EeuU37F9PQkF7A" name="Gestisimal">
+    <eAnnotations xmi:id="_LFK1YLL9EeuU37F9PQkF7A" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_LFK1YbL9EeuU37F9PQkF7A" source="codegen">
+        <details xmi:id="_LFK1YrL9EeuU37F9PQkF7A" key="codegenDirectory" value="/Gestisimal/src"/>
+        <details xmi:id="_LhvcoLL9EeuU37F9PQkF7A" key="AssociatedSourceCode" value="/Gestisimal/src/gestisimal/Almacen.java;957333568/1;/Gestisimal/src/gestisimal/Articulo.java;197529592/1;/Gestisimal/src/gestisimal/TestAlmacen.java;1073176080/1;/Gestisimal/src/gestisimal/excepciones/AlmacenCSVException.java;4076910621/1;/Gestisimal/src/gestisimal/excepciones/AlmacenXMLException.java;1501471322/1;/Gestisimal/src/gestisimal/excepciones/ArticuloInexistenteException.java;346770980/1;/Gestisimal/src/gestisimal/excepciones/ArticuloRepetidoException.java;3214200765/1;/Gestisimal/src/gestisimal/excepciones/CodigoNoValidoException.java;2109327546/1;/Gestisimal/src/gestisimal/excepciones/NumeroNegativoException.java;2296604209/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_LUzM0LL9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_LUzM0bL9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_LUzM0rL9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_LUzM07L9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_LUzM1LL9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_LUzM1bL9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_LUzM1rL9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_LUzz4LL9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_LU0a8LL9EeuU37F9PQkF7A">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LU7vsLL9EeuU37F9PQkF7A" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LU7vsbL9EeuU37F9PQkF7A" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZMkoLL9EeuU37F9PQkF7A" name="BufferedReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZNywLL9EeuU37F9PQkF7A" name="BufferedWriter"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZPA4LL9EeuU37F9PQkF7A" name="File"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZPn8bL9EeuU37F9PQkF7A" name="FileWriter"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZQPAbL9EeuU37F9PQkF7A" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZii4LL9EeuU37F9PQkF7A" name="FileNotFoundException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LU8WwLL9EeuU37F9PQkF7A" name="nio">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LU8WwbL9EeuU37F9PQkF7A" name="file">
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZQ2EbL9EeuU37F9PQkF7A" name="Files"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZQ2E7L9EeuU37F9PQkF7A" name="Paths"/>
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_LZRdIbL9EeuU37F9PQkF7A" name="StandardOpenOption"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LU8WwrL9EeuU37F9PQkF7A" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZSEMbL9EeuU37F9PQkF7A" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZjJ8LL9EeuU37F9PQkF7A" name="Scanner"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LZp3oLL9EeuU37F9PQkF7A" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZp3obL9EeuU37F9PQkF7A" name="Object"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LZsT4LL9EeuU37F9PQkF7A" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LU8Ww7L9EeuU37F9PQkF7A" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LU890LL9EeuU37F9PQkF7A" name="xml">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LU890bL9EeuU37F9PQkF7A" name="parsers">
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZSrQbL9EeuU37F9PQkF7A" name="DocumentBuilder"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZTSUbL9EeuU37F9PQkF7A" name="DocumentBuilderFactory"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZTSU7L9EeuU37F9PQkF7A" name="ParserConfigurationException"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_LU890rL9EeuU37F9PQkF7A" name="transform">
+          <packagedElement xmi:type="uml:Package" xmi:id="_LU9k4LL9EeuU37F9PQkF7A" name="dom">
+            <packagedElement xmi:type="uml:Class" xmi:id="_LZVHg7L9EeuU37F9PQkF7A" name="DOMSource"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_LU9k4bL9EeuU37F9PQkF7A" name="stream">
+            <packagedElement xmi:type="uml:Class" xmi:id="_LZVukbL9EeuU37F9PQkF7A" name="StreamResult"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZT5YbL9EeuU37F9PQkF7A" name="Transformer"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZUgcbL9EeuU37F9PQkF7A" name="TransformerException"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZVHgbL9EeuU37F9PQkF7A" name="TransformerFactory"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LU9k4rL9EeuU37F9PQkF7A" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LU9k47L9EeuU37F9PQkF7A" name="w3c">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LU9k5LL9EeuU37F9PQkF7A" name="dom">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_LZWVobL9EeuU37F9PQkF7A" name="Document"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_LZW8sbL9EeuU37F9PQkF7A" name="Element"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_LZb1MLL9EeuU37F9PQkF7A" name="Node"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_LZb1MrL9EeuU37F9PQkF7A" name="NodeList"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LU-L8LL9EeuU37F9PQkF7A" name="xml">
+        <packagedElement xmi:type="uml:Package" xmi:id="_LU-L8bL9EeuU37F9PQkF7A" name="sax">
+          <packagedElement xmi:type="uml:Class" xmi:id="_LZccQbL9EeuU37F9PQkF7A" name="SAXException"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LU-L8rL9EeuU37F9PQkF7A" name="gestisimal">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LU-L87L9EeuU37F9PQkF7A" name="excepciones">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LWen0LL9EeuU37F9PQkF7A" name="AlmacenCSVException">
+          <ownedComment xmi:id="_LaCSJLL9EeuU37F9PQkF7A">
+            <body>Si da error al llamar al csv del almacen&#xD;
+@author Sergio Vera Jurado&#xD;
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_LZsT4rL9EeuU37F9PQkF7A" general="_LZsT4LL9EeuU37F9PQkF7A"/>
+          <ownedAttribute xmi:id="_LZxzcbL9EeuU37F9PQkF7A" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZxzcrL9EeuU37F9PQkF7A" value="4760983661709172079L"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_15LL9EeuU37F9PQkF7A" name="AlmacenCSVException" specification="_LWf18LL9EeuU37F9PQkF7A">
+            <ownedParameter xmi:id="_LZ_15bL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LZ_15rL9EeuU37F9PQkF7A" type="_LWen0LL9EeuU37F9PQkF7A" direction="return"/>
+            <language>java</language>
+            <body>super(string);&#xD;
+  </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_LWf18LL9EeuU37F9PQkF7A" name="AlmacenCSVException" method="_LZ_15LL9EeuU37F9PQkF7A">
+            <eAnnotations xmi:id="_LWf18rL9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_LWf187L9EeuU37F9PQkF7A" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_LWf18bL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LWf19LL9EeuU37F9PQkF7A" type="_LWen0LL9EeuU37F9PQkF7A" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LWgdALL9EeuU37F9PQkF7A" name="AlmacenXMLException">
+          <ownedComment xmi:id="_LaCSJbL9EeuU37F9PQkF7A">
+            <body>Si da error al llamar al xml del almacen&#xD;
+@author Sergio Vera Jurado&#xD;
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_LZs68LL9EeuU37F9PQkF7A" general="_LZsT4LL9EeuU37F9PQkF7A"/>
+          <ownedAttribute xmi:id="_LZyagLL9EeuU37F9PQkF7A" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZyagbL9EeuU37F9PQkF7A" value="1689646165076599118L"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_157L9EeuU37F9PQkF7A" name="AlmacenXMLException" specification="_LWhEELL9EeuU37F9PQkF7A">
+            <ownedParameter xmi:id="_LZ_16LL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LZ_16bL9EeuU37F9PQkF7A" type="_LWgdALL9EeuU37F9PQkF7A" direction="return"/>
+            <language>java</language>
+            <body>super(string);&#xD;
+  </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_LWhEELL9EeuU37F9PQkF7A" name="AlmacenXMLException" method="_LZ_157L9EeuU37F9PQkF7A">
+            <eAnnotations xmi:id="_LWhEErL9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_LWhEE7L9EeuU37F9PQkF7A" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_LWhEEbL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LWhEFLL9EeuU37F9PQkF7A" type="_LWgdALL9EeuU37F9PQkF7A" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LWhrILL9EeuU37F9PQkF7A" name="ArticuloInexistenteException">
+          <ownedComment xmi:id="_LaCSJrL9EeuU37F9PQkF7A">
+            <body>Si el articulo no existe&#xD;
+@author sergio Vera Jurado&#xD;
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_LZs68bL9EeuU37F9PQkF7A" general="_LZsT4LL9EeuU37F9PQkF7A"/>
+          <ownedAttribute xmi:id="_LZyagrL9EeuU37F9PQkF7A" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZyag7L9EeuU37F9PQkF7A" value="-2308106173277932565L"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_16rL9EeuU37F9PQkF7A" name="ArticuloInexistenteException" specification="_LWhrIbL9EeuU37F9PQkF7A">
+            <ownedParameter xmi:id="_LZ_167L9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LZ_17LL9EeuU37F9PQkF7A" type="_LWhrILL9EeuU37F9PQkF7A" direction="return"/>
+            <language>java</language>
+            <body>super(string);&#xD;
+  </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_LWhrIbL9EeuU37F9PQkF7A" name="ArticuloInexistenteException" method="_LZ_16rL9EeuU37F9PQkF7A">
+            <eAnnotations xmi:id="_LWhrI7L9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_LWhrJLL9EeuU37F9PQkF7A" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_LWhrIrL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LWiSMLL9EeuU37F9PQkF7A" type="_LWhrILL9EeuU37F9PQkF7A" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LWiSMbL9EeuU37F9PQkF7A" name="ArticuloRepetidoException">
+          <ownedComment xmi:id="_LaCSJ7L9EeuU37F9PQkF7A">
+            <body>Si el articulo esta repetido&#xD;
+@author Sergio Vera Jurado&#xD;
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_LZtiALL9EeuU37F9PQkF7A" general="_LZsT4LL9EeuU37F9PQkF7A"/>
+          <ownedAttribute xmi:id="_LZyahLL9EeuU37F9PQkF7A" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZyahbL9EeuU37F9PQkF7A" value="-5275867970911297179L"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LaAc8LL9EeuU37F9PQkF7A" name="ArticuloRepetidoException" specification="_LWi5QLL9EeuU37F9PQkF7A">
+            <ownedParameter xmi:id="_LaAc8bL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LaAc8rL9EeuU37F9PQkF7A" type="_LWiSMbL9EeuU37F9PQkF7A" direction="return"/>
+            <language>java</language>
+            <body>super(string);&#xD;
+  </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_LWi5QLL9EeuU37F9PQkF7A" name="ArticuloRepetidoException" method="_LaAc8LL9EeuU37F9PQkF7A">
+            <eAnnotations xmi:id="_LWi5QrL9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_LWjgULL9EeuU37F9PQkF7A" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_LWi5QbL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LWjgUbL9EeuU37F9PQkF7A" type="_LWiSMbL9EeuU37F9PQkF7A" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LWjgUrL9EeuU37F9PQkF7A" name="CodigoNoValidoException">
+          <ownedComment xmi:id="_LaCSKLL9EeuU37F9PQkF7A">
+            <body>si el codigo no es valido&#xD;
+@author Sergio Vera Jurado&#xD;
+ *</body>
+          </ownedComment>
+          <generalization xmi:id="_LZtiAbL9EeuU37F9PQkF7A" general="_LZsT4LL9EeuU37F9PQkF7A"/>
+          <ownedAttribute xmi:id="_LZyahrL9EeuU37F9PQkF7A" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZzBkLL9EeuU37F9PQkF7A" value="4954135465152486030L"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LaAc87L9EeuU37F9PQkF7A" name="CodigoNoValidoException" specification="_LWkHYLL9EeuU37F9PQkF7A">
+            <ownedParameter xmi:id="_LaAc9LL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LaAc9bL9EeuU37F9PQkF7A" type="_LWjgUrL9EeuU37F9PQkF7A" direction="return"/>
+            <language>java</language>
+            <body>super(string);&#xD;
+  </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_LWkHYLL9EeuU37F9PQkF7A" name="CodigoNoValidoException" method="_LaAc87L9EeuU37F9PQkF7A">
+            <eAnnotations xmi:id="_LWkucLL9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_LWkucbL9EeuU37F9PQkF7A" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_LWkucrL9EeuU37F9PQkF7A" type="_LWjgUrL9EeuU37F9PQkF7A" direction="return"/>
+            <ownedParameter xmi:id="_LWkHYbL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LWkuc7L9EeuU37F9PQkF7A" name="NumeroNegativoException">
+          <ownedComment xmi:id="_LaCSKbL9EeuU37F9PQkF7A">
+            <body>Salta si el numero es negativo&#xD;
+@author sergio Vera Jurado</body>
+          </ownedComment>
+          <generalization xmi:id="_LZtiArL9EeuU37F9PQkF7A" general="_LZsT4LL9EeuU37F9PQkF7A"/>
+          <ownedAttribute xmi:id="_LZzBkbL9EeuU37F9PQkF7A" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZzBkrL9EeuU37F9PQkF7A" value="-7619411719334351922L"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LaAc9rL9EeuU37F9PQkF7A" name="NumeroNegativoException" specification="_LWlVgLL9EeuU37F9PQkF7A">
+            <ownedParameter xmi:id="_LaAc97L9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LaAc-LL9EeuU37F9PQkF7A" type="_LWkuc7L9EeuU37F9PQkF7A" direction="return"/>
+            <language>java</language>
+            <body>super(string);&#xD;
+  </body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_LWlVgLL9EeuU37F9PQkF7A" name="NumeroNegativoException" method="_LaAc9rL9EeuU37F9PQkF7A">
+            <eAnnotations xmi:id="_LWlVgrL9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_LWlVg7L9EeuU37F9PQkF7A" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_LWlVgbL9EeuU37F9PQkF7A" name="string">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_LWlVhLL9EeuU37F9PQkF7A" type="_LWkuc7L9EeuU37F9PQkF7A" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LVwPELL9EeuU37F9PQkF7A" name="Almacen">
+        <ownedComment xmi:id="_LaBEALL9EeuU37F9PQkF7A">
+          <body>Clase Almacen que realice el alta, baja, modificacion, entrada de mercancia (incrementa&#xD;
+unidades), salida de mercancia (decrementa unidades). El estado sera un ArrayList de articulos.&#xD;
+Esta clase es un envoltorio de un ArrayList. Su comportamiento sera: aÃ±adir articulos (no puede&#xD;
+haber dos artÃ­culos iguales), eliminar articulos, incrementar las existencias de un articulo (se&#xD;
+delega en la clase Articulo), decrementar las existencias de un articulo (nunca por debajo de&#xD;
+cero, se delega en la clase Articulo), devolver un articulo (para mostrarlo). Para listar el&#xD;
+almacen podra devolverse una cadena con todos los articulos del almacen (toString).&#xD;
+@author Sergio Vera Jurado&#xD;
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_LZuwILL9EeuU37F9PQkF7A" name="CSV_CABECERA" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZuwIbL9EeuU37F9PQkF7A" value="&quot;Descripcion,Precio compra,Precio venta,Numero unidades,Stock maximo,Stock seguridad&quot;"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LZvXMLL9EeuU37F9PQkF7A" name="almacen" visibility="private" isStatic="true" type="_LZSEMbL9EeuU37F9PQkF7A" association="_LaEHULL9EeuU37F9PQkF7A">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZvXMrL9EeuU37F9PQkF7A" value="new ArrayList&lt;Articulo>()"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ4hILL9EeuU37F9PQkF7A" name="alta" specification="_LV0ggLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ4hIbL9EeuU37F9PQkF7A" name="precioCompra">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ4hIrL9EeuU37F9PQkF7A" name="precioVenta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ4hI7L9EeuU37F9PQkF7A" name="descripcion">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ4hJLL9EeuU37F9PQkF7A" name="numeroUnidades">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ4hJbL9EeuU37F9PQkF7A" name="stockSeguridad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ4hJrL9EeuU37F9PQkF7A" name="stockMaximo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Articulo articulo = new Articulo(precioCompra, precioVenta, descripcion, numeroUnidades,&#xD;
+     stockSeguridad, stockMaximo);&#xD;
+ if (!almacen.contains(articulo))&#xD;
+   almacen.add(articulo);&#xD;
+ else&#xD;
+   throw new ArticuloRepetidoException(&quot;El articulo introducido ya existe&quot;);&#xD;
+&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ69YLL9EeuU37F9PQkF7A" name="eliminar" specification="_LV4x8LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ69YbL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ69YrL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return almacen.remove(new Articulo(codigo));&#xD;
+&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ69Y7L9EeuU37F9PQkF7A" name="incrementarCantidad" specification="_LV5ZALL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ69ZLL9EeuU37F9PQkF7A" name="cantidad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ69ZbL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>buscarArticulo(codigo).incrementar(cantidad);&#xD;
+&#xD;
+&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ69ZrL9EeuU37F9PQkF7A" name="decrementarCantidad" specification="_LV6nILL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ69Z7L9EeuU37F9PQkF7A" name="cantidad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ69aLL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>buscarArticulo(codigo).decrementar(cantidad);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ7kcLL9EeuU37F9PQkF7A" name="buscarArticulo" specification="_LV6nI7L9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ7kcbL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ7kcrL9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+          <language>java</language>
+          <body>try {&#xD;
+   return almacen.get(almacen.indexOf((new Articulo(codigo))));&#xD;
+ } catch (IndexOutOfBoundsException e) {&#xD;
+   throw new ArticuloInexistenteException(&#xD;
+       &quot;El codigo introducido no pertenece a ningun artï¿½culo&quot;);&#xD;
+ }&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ7kc7L9EeuU37F9PQkF7A" name="toString" specification="_LV7OMLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ7kdLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return &quot;[almacen=&quot; + almacen + &quot;]&quot;;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ7kdbL9EeuU37F9PQkF7A" name="guardarCSV" specification="_LV9DYLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ7kdrL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>var file = Files.newBufferedWriter(Paths.get(fileName), StandardOpenOption.CREATE);&#xD;
+ guardarCabeceraCSV(file);&#xD;
+ for (Articulo articulo : almacen) {&#xD;
+   guardarArticuloCSV(articulo, file);&#xD;
+ }&#xD;
+ file.close();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ7kd7L9EeuU37F9PQkF7A" name="guardarCabeceraCSV" specification="_LZmNQLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ7keLL9EeuU37F9PQkF7A" name="file" type="_LZNywLL9EeuU37F9PQkF7A"/>
+          <language>java</language>
+          <body>file.write(CSV_CABECERA);&#xD;
+ file.newLine();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ7kebL9EeuU37F9PQkF7A" name="guardarArticuloCSV" specification="_LZmNQrL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ7kerL9EeuU37F9PQkF7A" name="articulo" type="_LWPXQLL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZ7ke7L9EeuU37F9PQkF7A" name="file" type="_LZNywLL9EeuU37F9PQkF7A"/>
+          <language>java</language>
+          <body>file.write(&quot;\&quot;&quot; + articulo.getDescripcion() + &quot;\&quot;,&quot;);&#xD;
+ file.write(&quot;\&quot;&quot; + articulo.getPrecioCompra() + &quot;\&quot;,&quot;);&#xD;
+ file.write(&quot;\&quot;&quot; + articulo.getPrecioVenta() + &quot;\&quot;,&quot;);&#xD;
+ file.write(&quot;\&quot;&quot; + articulo.getNumeroUnidades() + &quot;\&quot;,&quot;);&#xD;
+ file.write(&quot;\&quot;&quot; + articulo.getStockMaximo() + &quot;\&quot;,&quot;);&#xD;
+ file.write(&quot;\&quot;&quot; + articulo.getStockSeguridad() + &quot;\&quot;&quot;);&#xD;
+ file.newLine();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ7kfLL9EeuU37F9PQkF7A" name="cargarCSV" specification="_LV-RgLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ7kfbL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>var file = Files.newBufferedReader(Paths.get(fileName));&#xD;
+ validadCabeceraCSV(file);&#xD;
+&#xD;
+ String line;&#xD;
+ while ((line = file.readLine()) != null) {&#xD;
+   Articulo articulo = nuevoArticuloCSV(line);&#xD;
+   almacen.add(articulo);&#xD;
+ }&#xD;
+ file.close();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8LgLL9EeuU37F9PQkF7A" name="validadCabeceraCSV" specification="_LZm0ULL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8LgbL9EeuU37F9PQkF7A" name="file" type="_LZMkoLL9EeuU37F9PQkF7A"/>
+          <language>java</language>
+          <body>String cabecera = file.readLine().trim();&#xD;
+ if (!cabecera.equalsIgnoreCase(CSV_CABECERA)) {&#xD;
+   throw new AlmacenCSVException(&quot;Cabecera errÃ³nea en el CSV.&quot;);&#xD;
+ }&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8LgrL9EeuU37F9PQkF7A" name="nuevoArticuloCSV" specification="_LV_foLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8Lg7L9EeuU37F9PQkF7A" name="line">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ8LhLL9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+          <language>java</language>
+          <body>validarArticulosCSV(line);&#xD;
+ String[] guardarArticulos = line.split(&quot;\&quot;,&quot;);&#xD;
+&#xD;
+ String descripcion = guardarArticulos[0].replace(&quot;\&quot;&quot;, &quot;&quot;);&#xD;
+ double precioCompra = Double.parseDouble(guardarArticulos[1].replace(&quot;\&quot;&quot;, &quot;&quot;));&#xD;
+ double precioVenta = Double.parseDouble(guardarArticulos[2].replace(&quot;\&quot;&quot;, &quot;&quot;));&#xD;
+ int numeroUnidades = Integer.parseInt(guardarArticulos[3].replace(&quot;\&quot;&quot;, &quot;&quot;));&#xD;
+ int stockMaximo = Integer.parseInt(guardarArticulos[4].replace(&quot;\&quot;&quot;, &quot;&quot;));&#xD;
+ int stockSeguridad = Integer.parseInt(guardarArticulos[5].replace(&quot;\&quot;&quot;, &quot;&quot;));&#xD;
+&#xD;
+ return new Articulo(precioCompra, precioVenta, descripcion, numeroUnidades, stockSeguridad,&#xD;
+     stockMaximo);&#xD;
+&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8LhbL9EeuU37F9PQkF7A" name="validarArticulosCSV" specification="_LWAGsLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8LhrL9EeuU37F9PQkF7A" name="line">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int numeroDeCampos = line.split(&quot;\&quot;,&quot;).length;&#xD;
+ int numeroDeCamposHead = CSV_CABECERA.split(&quot;,&quot;).length;&#xD;
+&#xD;
+ if (numeroDeCampos != numeroDeCamposHead) {&#xD;
+   throw new AlmacenCSVException(&#xD;
+       line + &quot;: no es un formato vÃ¡lido para convertirlo en Articulo.&quot;);&#xD;
+ }&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8Lh7L9EeuU37F9PQkF7A" name="guardarXML" specification="_LWBU0LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8LiLL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try {&#xD;
+   Document xml = crearDocumentXML();&#xD;
+   guardarRootXML(xml);&#xD;
+   for (Articulo articulo: almacen) {&#xD;
+     guardarArticuloXML(articulo, xml);&#xD;
+   }&#xD;
+&#xD;
+   guardarArchivoXML(xml, fileName);&#xD;
+&#xD;
+ } catch (ParserConfigurationException | TransformerException e) {&#xD;
+   throw new AlmacenXMLException(&quot;Error al generar XML&quot;);&#xD;
+ }&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8LibL9EeuU37F9PQkF7A" name="crearDocumentXML" specification="_LWB74LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8LirL9EeuU37F9PQkF7A" type="_LZWVobL9EeuU37F9PQkF7A" direction="return"/>
+          <language>java</language>
+          <body>DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();&#xD;
+ DocumentBuilder builder = factory.newDocumentBuilder();&#xD;
+ Document document = builder.newDocument();&#xD;
+ return document;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8Li7L9EeuU37F9PQkF7A" name="guardarRootXML" specification="_LZnbYLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8LjLL9EeuU37F9PQkF7A" name="xml" type="_LZWVobL9EeuU37F9PQkF7A"/>
+          <language>java</language>
+          <body>Element root = xml.createElement(&quot;Almacen&quot;);&#xD;
+ xml.appendChild(root);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8LjbL9EeuU37F9PQkF7A" name="guardarArticuloXML" specification="_LZnbYrL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8ykLL9EeuU37F9PQkF7A" name="articulo" type="_LWPXQLL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZ8ykbL9EeuU37F9PQkF7A" name="xml" type="_LZWVobL9EeuU37F9PQkF7A"/>
+          <language>java</language>
+          <body>Element root = xml.getDocumentElement();&#xD;
+&#xD;
+ Element articuloElement = xml.createElement(&quot;Articulo&quot;);&#xD;
+ root.appendChild(articuloElement);&#xD;
+&#xD;
+ guardarCampoArticulo(&quot;Descripcion&quot;, articulo.getDescripcion(), articuloElement);&#xD;
+ guardarCampoArticulo(&quot;PrecioCompra&quot;, String.valueOf(articulo.getPrecioCompra()),&#xD;
+     articuloElement);&#xD;
+ guardarCampoArticulo(&quot;PrecioVenta&quot;, String.valueOf(articulo.getPrecioVenta()),&#xD;
+     articuloElement);&#xD;
+ guardarCampoArticulo(&quot;NumeroUnidades&quot;, String.valueOf(articulo.getNumeroUnidades()),&#xD;
+     articuloElement);&#xD;
+ guardarCampoArticulo(&quot;StockMaximo&quot;, String.valueOf(articulo.getStockMaximo()),&#xD;
+     articuloElement);&#xD;
+ guardarCampoArticulo(&quot;StockSeguridad&quot;, String.valueOf(articulo.getStockSeguridad()),&#xD;
+     articuloElement);&#xD;
+&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8ykrL9EeuU37F9PQkF7A" name="guardarCampoArticulo" specification="_LZnbZbL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8yk7L9EeuU37F9PQkF7A" name="atributo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ8ylLL9EeuU37F9PQkF7A" name="valorCampo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ8ylbL9EeuU37F9PQkF7A" name="articuloElement" type="_LZW8sbL9EeuU37F9PQkF7A"/>
+          <language>java</language>
+          <body>Document xml = articuloElement.getOwnerDocument();&#xD;
+ Element attrElement = xml.createElement(atributo);&#xD;
+ attrElement.appendChild(xml.createTextNode(valorCampo));&#xD;
+ articuloElement.appendChild(attrElement);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8ylrL9EeuU37F9PQkF7A" name="guardarArchivoXML" specification="_LZoCcrL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8yl7L9EeuU37F9PQkF7A" name="xml" type="_LZWVobL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZ8ymLL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Transformer transformer = TransformerFactory.newInstance().newTransformer();&#xD;
+ DOMSource xmlSource = new DOMSource(xml);&#xD;
+ StreamResult output = new StreamResult(new FileWriter(fileName));&#xD;
+ transformer.transform(xmlSource, output);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8ymbL9EeuU37F9PQkF7A" name="cargarXml" specification="_LWEYILL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8ymrL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try {&#xD;
+   Document xml = nuevoDocumentoXML(fileName);&#xD;
+   NodeList articulos = xml.getElementsByTagName(&quot;Articulo&quot;);&#xD;
+   for (int i = 0; i &lt; articulos.getLength(); i++) {&#xD;
+     Articulo articulo = nuevoArticuloXML(articulos.item(i));&#xD;
+     almacen.add(articulo);&#xD;
+   }&#xD;
+ } catch (ParserConfigurationException | SAXException e) {&#xD;
+   throw new AlmacenXMLException(&quot;Error al cargar XML &quot;);&#xD;
+ }&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8ym7L9EeuU37F9PQkF7A" name="nuevoDocumentoXML" specification="_LWFmQLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8ynLL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ8ynbL9EeuU37F9PQkF7A" type="_LZWVobL9EeuU37F9PQkF7A" direction="return"/>
+          <language>java</language>
+          <body>DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();&#xD;
+ DocumentBuilder builder = factory.newDocumentBuilder();&#xD;
+ Document document = builder.parse(new File(fileName));&#xD;
+ document.getDocumentElement().normalize();&#xD;
+ return document;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8ynrL9EeuU37F9PQkF7A" name="nuevoArticuloXML" specification="_LZopgbL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8yn7L9EeuU37F9PQkF7A" name="itemArticulo" type="_LZb1MLL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZ8yoLL9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+          <language>java</language>
+          <body>String descripcion = getCampoArticulo(&quot;Descripcion&quot;, itemArticulo);&#xD;
+ double precioCompra = Double.parseDouble(getCampoArticulo(&quot;PrecioCompra&quot;, itemArticulo));&#xD;
+ double precioVenta = Double.parseDouble(getCampoArticulo(&quot;PrecioVenta&quot;, itemArticulo));&#xD;
+ int numeroUnidades = Integer.parseInt(getCampoArticulo(&quot;NumeroUnidades&quot;, itemArticulo));&#xD;
+ int stockMaximo = Integer.parseInt(getCampoArticulo(&quot;StockMaximo&quot;, itemArticulo));&#xD;
+ int stockSeguridad = Integer.parseInt(getCampoArticulo(&quot;StockSeguridad&quot;, itemArticulo));&#xD;
+&#xD;
+ return new Articulo(precioCompra, precioVenta, descripcion, numeroUnidades, stockSeguridad,&#xD;
+     stockMaximo);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ8yobL9EeuU37F9PQkF7A" name="getCampoArticulo" specification="_LZophLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ8yorL9EeuU37F9PQkF7A" name="field">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ8yo7L9EeuU37F9PQkF7A" name="itemArticulo" type="_LZb1MLL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZ8ypLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Element elementoArticulo = (Element) itemArticulo;&#xD;
+ return elementoArticulo.getElementsByTagName(field).item(0).getTextContent();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_LV0ggLL9EeuU37F9PQkF7A" name="alta" visibility="package" method="_LZ4hILL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A _LWiSMbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEAbL9EeuU37F9PQkF7A">
+            <body>Da de alta un articulo&#xD;
+   * @param precioCompra precioCompra El precio de compra de un articulo&#xD;
+   * @param precioVenta El precio de venta de un articulo&#xD;
+   * @param descripcion DescripciÃ³n de un articulo&#xD;
+   * @param numeroUnidades Cantidades disponibles del nuevo articulo&#xD;
+   * @param stockSeguridad Stock minimo permitido de un nuevo articulo&#xD;
+   * @param stockMaximo Stock maximo permitido de un nuevo articulo&#xD;
+   * @throws NumeroNegativoException Salta cuando el numero de unidades o el precio de compra es negativo&#xD;
+   * @throws ArticuloRepetidoException Salta cuando el articulo tiene el mismo codigo que otro ya creado</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LV1HkLL9EeuU37F9PQkF7A" name="precioCompra">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LV1HkbL9EeuU37F9PQkF7A" name="precioVenta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LV1HkrL9EeuU37F9PQkF7A" name="descripcion">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LV1Hk7L9EeuU37F9PQkF7A" name="numeroUnidades">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LV1HlLL9EeuU37F9PQkF7A" name="stockSeguridad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LV1HlbL9EeuU37F9PQkF7A" name="stockMaximo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LV4x8LL9EeuU37F9PQkF7A" name="eliminar" visibility="package" method="_LZ69YLL9EeuU37F9PQkF7A" raisedException="_LWjgUrL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEArL9EeuU37F9PQkF7A">
+            <body>Elimina un articulo previamente introducido pasandole el codigo&#xD;
+   * &#xD;
+   * @param codigo sirve para identificar un articulo&#xD;
+   * @return True si la operacion se ha realizado correctamente&#xD;
+   * @throws CodigoNoValidoException Si el codigo introducido no existe</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LV4x8bL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LV4x8rL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LV5ZALL9EeuU37F9PQkF7A" name="incrementarCantidad" visibility="package" method="_LZ69Y7L9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A _LWhrILL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEA7L9EeuU37F9PQkF7A">
+            <body>metodo que busca un articulo y llama al metodo incrementar de &#xD;
+   * la clase articulo&#xD;
+   * @see Articulo&#xD;
+   * @param cantidad el numero por el que se va a incrementar el articulo&#xD;
+   * @param codigo el codigo del articulo que se va a incrementar&#xD;
+   * @throws NumeroNegativoException Salta cuando el numero de unidades o el precio de compra es negativo&#xD;
+   * @throws ArticuloInexistenteException si el codigo introducido no se encuentra</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LV5ZAbL9EeuU37F9PQkF7A" name="cantidad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LV5ZArL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LV6nILL9EeuU37F9PQkF7A" name="decrementarCantidad" visibility="package" method="_LZ69ZrL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A _LWhrILL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEBLL9EeuU37F9PQkF7A">
+            <body>metodo que busca un articulo y llama al metodo decrementar de &#xD;
+   * la clase articulo&#xD;
+   * @see Articulo &#xD;
+   * @param cantidad la cantidad en la que se va a decrementar&#xD;
+   * @param codigo para buscar un articulo en base a su codigo&#xD;
+   * @throws NumeroNegativoException Salta cuando el numero de unidades o el precio de compra es negativo&#xD;
+   * @throws ArticuloInexistenteException si el codigo introducido no se encuentra</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LV6nIbL9EeuU37F9PQkF7A" name="cantidad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LV6nIrL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LV6nI7L9EeuU37F9PQkF7A" name="buscarArticulo" visibility="package" method="_LZ7kcLL9EeuU37F9PQkF7A" raisedException="_LWhrILL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEBbL9EeuU37F9PQkF7A">
+            <body>Devuelve la posiciÃ³n del articulo en el arraylist segun el codigo pasado&#xD;
+   * @param codigo para buscar el artÃ­culo&#xD;
+   * @throws ArticuloInexistenteException si el codigo del articulo no existe&#xD;
+   * @return el ArtÃ­culo encontrado</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LV6nJLL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZdqYLL9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LV7OMLL9EeuU37F9PQkF7A" name="toString" method="_LZ7kc7L9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LV7OMbL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LV9DYLL9EeuU37F9PQkF7A" name="guardarCSV" visibility="package" method="_LZ7kdbL9EeuU37F9PQkF7A" raisedException="_LZQPAbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEBrL9EeuU37F9PQkF7A">
+            <body>metodo que guarda los datos introducidos en un arhivo CSV&#xD;
+   * @param fileName Nombre del archivo &#xD;
+   * @throws IOException</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LV9DYbL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LV-RgLL9EeuU37F9PQkF7A" name="cargarCSV" visibility="package" isStatic="true" method="_LZ7kfLL9EeuU37F9PQkF7A" raisedException="_LWen0LL9EeuU37F9PQkF7A _LWkuc7L9EeuU37F9PQkF7A _LZQPAbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBECbL9EeuU37F9PQkF7A">
+            <body>metodo que carga un archivo csv previamente especificado&#xD;
+   * @param fileName nombre del archivo&#xD;
+   * @throws IOException&#xD;
+   * @throws AlmacenCSVException si no se encuentra el csv&#xD;
+   * @throws NumeroNegativoException cuando el numero es inferior a 0</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LV-RgbL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LV_foLL9EeuU37F9PQkF7A" name="nuevoArticuloCSV" visibility="private" isStatic="true" method="_LZ8LgrL9EeuU37F9PQkF7A" raisedException="_LWen0LL9EeuU37F9PQkF7A _LWkuc7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEC7L9EeuU37F9PQkF7A">
+            <body>metodo que lee el csv introducido y crea el articulo correspondiente&#xD;
+   * @param line linea que se escribe&#xD;
+   * @return articulo articulo que se escribe&#xD;
+   * @throws AlmacenCSVException si no se encuentra el csv&#xD;
+   * @throws NumeroNegativoException si el numero es inferior a 0</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LV_fobL9EeuU37F9PQkF7A" name="line">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZeRcLL9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWAGsLL9EeuU37F9PQkF7A" name="validarArticulosCSV" visibility="private" isStatic="true" method="_LZ8LhbL9EeuU37F9PQkF7A" raisedException="_LWen0LL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEDLL9EeuU37F9PQkF7A">
+            <body>metodo que valida que las variables del csv sean las adecuadas&#xD;
+   * @param line linea en la que se escribe&#xD;
+   * @throws AlmacenCSVException si no se encuentra el csv</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWAtwLL9EeuU37F9PQkF7A" name="line">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWBU0LL9EeuU37F9PQkF7A" name="guardarXML" visibility="package" method="_LZ8Lh7L9EeuU37F9PQkF7A" raisedException="_LWgdALL9EeuU37F9PQkF7A _LZQPAbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrELL9EeuU37F9PQkF7A">
+            <body>metodo que guarda los articulos creados en un archivo xml&#xD;
+   * @param fileName nombre del archivo&#xD;
+   * @throws AlmacenXMLException si no se encuentra el xml&#xD;
+   * @throws IOException</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWBU0bL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWB74LL9EeuU37F9PQkF7A" name="crearDocumentXML" visibility="private" method="_LZ8LibL9EeuU37F9PQkF7A" raisedException="_LZTSU7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrEbL9EeuU37F9PQkF7A">
+            <body>metodo que crea el documento Xml&#xD;
+   * @return el constructor del documento&#xD;
+   * @throws ParserConfigurationException</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZm0UrL9EeuU37F9PQkF7A" type="_LZWVobL9EeuU37F9PQkF7A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWEYILL9EeuU37F9PQkF7A" name="cargarXml" visibility="package" isStatic="true" method="_LZ8ymbL9EeuU37F9PQkF7A" raisedException="_LZQPAbL9EeuU37F9PQkF7A _LWgdALL9EeuU37F9PQkF7A _LWkuc7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrFrL9EeuU37F9PQkF7A">
+            <body>Metodo que carga el xml especificado&#xD;
+   * @param fileName nombre del archivo&#xD;
+   * @throws IOException&#xD;
+   * @throws AlmacenXMLException si no se encuentra el xml&#xD;
+   * @throws NumeroNegativoException si el numero es negativo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWEYIbL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWFmQLL9EeuU37F9PQkF7A" name="nuevoDocumentoXML" visibility="private" isStatic="true" method="_LZ8ym7L9EeuU37F9PQkF7A" raisedException="_LZTSU7L9EeuU37F9PQkF7A _LZQPAbL9EeuU37F9PQkF7A _LZccQbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrF7L9EeuU37F9PQkF7A">
+            <body>metodo que crea el archivo xml&#xD;
+   * @param fileName nombre del archivo&#xD;
+   * @return documento&#xD;
+   * @throws ParserConfigurationException&#xD;
+   * @throws IOException&#xD;
+   * @throws SAXException</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWFmQbL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZopgLL9EeuU37F9PQkF7A" type="_LZWVobL9EeuU37F9PQkF7A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZmNQLL9EeuU37F9PQkF7A" name="guardarCabeceraCSV" visibility="private" method="_LZ7kd7L9EeuU37F9PQkF7A" raisedException="_LZQPAbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBEB7L9EeuU37F9PQkF7A">
+            <body>metodo que escribe la cabecera del CSV&#xD;
+   * @param file Nombre del archivo&#xD;
+   * @throws IOException</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZmNQbL9EeuU37F9PQkF7A" name="file" type="_LZNywLL9EeuU37F9PQkF7A"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZmNQrL9EeuU37F9PQkF7A" name="guardarArticuloCSV" visibility="private" method="_LZ7kebL9EeuU37F9PQkF7A" raisedException="_LZQPAbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBECLL9EeuU37F9PQkF7A">
+            <body>metodo que guarda las distintas variables de los articulos&#xD;
+   * @param articulo objeto de la clase articulo&#xD;
+   * @param file nombre del archivo&#xD;
+   * @throws IOException</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZmNQ7L9EeuU37F9PQkF7A" name="articulo" type="_LWPXQLL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZmNRLL9EeuU37F9PQkF7A" name="file" type="_LZNywLL9EeuU37F9PQkF7A"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZm0ULL9EeuU37F9PQkF7A" name="validadCabeceraCSV" visibility="private" isStatic="true" method="_LZ8LgLL9EeuU37F9PQkF7A" raisedException="_LZQPAbL9EeuU37F9PQkF7A _LWen0LL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBECrL9EeuU37F9PQkF7A">
+            <body>metodo que valida la cabecera del csv que se va ha cargar&#xD;
+   * @param file nombre del archivo&#xD;
+   * @throws IOException&#xD;
+   * @throws AlmacenCSVException si no se encuentra el csv</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZm0UbL9EeuU37F9PQkF7A" name="file" type="_LZMkoLL9EeuU37F9PQkF7A"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZnbYLL9EeuU37F9PQkF7A" name="guardarRootXML" visibility="private" method="_LZ8Li7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrErL9EeuU37F9PQkF7A">
+            <body>metodo que crea el elemento root en el xml&#xD;
+   * @param xml</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZnbYbL9EeuU37F9PQkF7A" name="xml" type="_LZWVobL9EeuU37F9PQkF7A"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZnbYrL9EeuU37F9PQkF7A" name="guardarArticuloXML" visibility="private" method="_LZ8LjbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrE7L9EeuU37F9PQkF7A">
+            <body>metodo que guarda las distintas variables del artÃ­culo en el xml&#xD;
+   * @param articulo el articulo que se escribe&#xD;
+   * @param xml el documento sobre el que se va a escribir</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZnbY7L9EeuU37F9PQkF7A" name="articulo" type="_LWPXQLL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZnbZLL9EeuU37F9PQkF7A" name="xml" type="_LZWVobL9EeuU37F9PQkF7A"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZnbZbL9EeuU37F9PQkF7A" name="guardarCampoArticulo" visibility="private" method="_LZ8ykrL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrFLL9EeuU37F9PQkF7A">
+            <body>Metodo que crea el campo en el xml&#xD;
+   * @param atributo el nombre del atributo&#xD;
+   * @param valorCampo valor que se escribe&#xD;
+   * @param articuloElement elemento de articulo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZnbZrL9EeuU37F9PQkF7A" name="atributo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZoCcLL9EeuU37F9PQkF7A" name="valorCampo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZoCcbL9EeuU37F9PQkF7A" name="articuloElement" type="_LZW8sbL9EeuU37F9PQkF7A"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZoCcrL9EeuU37F9PQkF7A" name="guardarArchivoXML" visibility="private" method="_LZ8ylrL9EeuU37F9PQkF7A" raisedException="_LZQPAbL9EeuU37F9PQkF7A _LZUgcbL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrFbL9EeuU37F9PQkF7A">
+            <body>Metodo que guarda el xml con el nombre especificado&#xD;
+   * @param xml documento&#xD;
+   * @param fileName nombre del archivo&#xD;
+   * @throws IOException&#xD;
+   * @throws TransformerException</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZoCc7L9EeuU37F9PQkF7A" name="xml" type="_LZWVobL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZoCdLL9EeuU37F9PQkF7A" name="fileName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZopgbL9EeuU37F9PQkF7A" name="nuevoArticuloXML" visibility="private" isStatic="true" method="_LZ8ynrL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrGLL9EeuU37F9PQkF7A">
+            <body>metodo que crea el articulo en base a los datos del xml&#xD;
+   * @param itemArticulo variable del articulo que se va a leer&#xD;
+   * @return un articulo nuevo&#xD;
+   * @throws NumeroNegativoException si el numero es inferior a 0</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZopgrL9EeuU37F9PQkF7A" name="itemArticulo" type="_LZb1MLL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZopg7L9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZophLL9EeuU37F9PQkF7A" name="getCampoArticulo" visibility="private" isStatic="true" method="_LZ8yobL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrGbL9EeuU37F9PQkF7A">
+            <body>metodo que obtiene los datos del nodo del xml&#xD;
+   * @param field campo que se va a escribir&#xD;
+   * @param itemArticulo nombre de la variable del articulo&#xD;
+   * @return elemento</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LZophbL9EeuU37F9PQkF7A" name="field">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZophrL9EeuU37F9PQkF7A" name="itemArticulo" type="_LZb1MLL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZpQkLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LWPXQLL9EeuU37F9PQkF7A" name="Articulo">
+        <ownedComment xmi:id="_LaBrGrL9EeuU37F9PQkF7A">
+          <body>Clase Articulo que representa a los articulos del almacen. Su estado sera: codigo, descripcion,&#xD;
+precio de compra, precio de venta, numero de unidades (nunca negativas), stock de seguridad y&#xD;
+stock maximo. Como comportamiento: Consideramos que el codigo va a generarse de forma automatica&#xD;
+en el constructor, asi no puede haber dos artÃ­culos con el mismo codigo. Esto implica que no&#xD;
+puede modificarse el codigo de un articulo, si el resto de las propiedades. Podremos mostrar el&#xD;
+articulo, por lo que necesito una representaciÃ³n del artÃ­culo en forma de cadena (toString).&#xD;
+@author Sergio Vera Jurado&#xD;
+@version 1.1&#xD;
+ *</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_LZwlULL9EeuU37F9PQkF7A" name="codigoGenerar" visibility="private" isStatic="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_LZwlUbL9EeuU37F9PQkF7A" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LZwlU7L9EeuU37F9PQkF7A" name="codigo" visibility="package" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LZxMYLL9EeuU37F9PQkF7A" name="precioCompra" visibility="package" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LZxMYbL9EeuU37F9PQkF7A" name="precioVenta" visibility="package" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LZxMYrL9EeuU37F9PQkF7A" name="descripcion" visibility="package" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LZxMY7L9EeuU37F9PQkF7A" name="numeroUnidades" visibility="package" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LZxMZLL9EeuU37F9PQkF7A" name="stockSeguridad" visibility="package" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_LZxzcLL9EeuU37F9PQkF7A" name="stockMaximo" visibility="package" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ9ZoLL9EeuU37F9PQkF7A" name="Articulo" specification="_LWRMcLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ9ZobL9EeuU37F9PQkF7A" name="precioCompra">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ9ZorL9EeuU37F9PQkF7A" name="precioVenta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ9Zo7L9EeuU37F9PQkF7A" name="descripcion">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ9ZpLL9EeuU37F9PQkF7A" name="numeroUnidades">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ9ZpbL9EeuU37F9PQkF7A" name="stockSeguridad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ9ZprL9EeuU37F9PQkF7A" name="stockMaximo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ9Zp7L9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+          <language>java</language>
+          <body>setCodigo();&#xD;
+ setPrecioCompra(precioCompra);&#xD;
+ setPrecioVenta(precioVenta);&#xD;
+ setDescripcion(descripcion);&#xD;
+ setStockSeguridad(stockSeguridad);&#xD;
+ setStockMaximo(stockMaximo);&#xD;
+ setNumeroUnidades(numeroUnidades);&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ9ZqLL9EeuU37F9PQkF7A" name="Articulo" specification="_LWSakLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ9ZqbL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LZ9ZqrL9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+          <language>java</language>
+          <body>this.codigo = codigo;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ9Zq7L9EeuU37F9PQkF7A" name="setCodigo" specification="_LWTBoLL9EeuU37F9PQkF7A">
+          <language>java</language>
+          <body>codigoGenerar += 1;&#xD;
+ this.codigo = codigoGenerar;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ9ZrLL9EeuU37F9PQkF7A" name="setPrecioCompra" specification="_LWTBobL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ9ZrbL9EeuU37F9PQkF7A" name="precioCompra">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (precioCompra &lt; 0)&#xD;
+   throw new IllegalArgumentException(&quot;El precio de compra no puede ser negativo&quot;);&#xD;
+ this.precioCompra = precioCompra;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-AsLL9EeuU37F9PQkF7A" name="setPrecioVenta" specification="_LWTosLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-AsbL9EeuU37F9PQkF7A" name="precioVenta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (precioVenta &lt; 0)&#xD;
+   throw new IllegalArgumentException(&quot;El precio de venta no puede ser negativo&quot;);&#xD;
+ this.precioVenta = precioVenta;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-AsrL9EeuU37F9PQkF7A" name="setDescripcion" specification="_LWTosrL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-As7L9EeuU37F9PQkF7A" name="descripcion">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.descripcion = descripcion;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-AtLL9EeuU37F9PQkF7A" name="setNumeroUnidades" specification="_LWUPwLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-AtbL9EeuU37F9PQkF7A" name="cantidad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (cantidad &lt; 0) {&#xD;
+   throw new IllegalArgumentException(&quot;No puedes introducir una cantidad inferior a cero&quot;);&#xD;
+ }&#xD;
+ this.numeroUnidades = cantidad;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-AtrL9EeuU37F9PQkF7A" name="setStockSeguridad" specification="_LWUPwrL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-At7L9EeuU37F9PQkF7A" name="stockSeguridad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.stockSeguridad = stockSeguridad;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-AuLL9EeuU37F9PQkF7A" name="setStockMaximo" specification="_LWU20LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-AubL9EeuU37F9PQkF7A" name="stockMaximo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.stockMaximo = stockMaximo;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-AurL9EeuU37F9PQkF7A" name="incrementar" specification="_LWU20rL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-Au7L9EeuU37F9PQkF7A" name="cantidadAIncrementar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (cantidadAIncrementar &lt; 0)&#xD;
+   throw new NumeroNegativoException(&quot;No puedes incrementar usando numeros negativos&quot;);&#xD;
+ setNumeroUnidades(getNumeroUnidades() + cantidadAIncrementar);&#xD;
+&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-nwLL9EeuU37F9PQkF7A" name="decrementar" specification="_LWVd4LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-nwbL9EeuU37F9PQkF7A" name="cantidadADecrementar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (cantidadADecrementar &lt; 0)&#xD;
+   throw new NumeroNegativoException(&quot;No puedes decrementar usando numeros negativos&quot;);&#xD;
+ setNumeroUnidades(getNumeroUnidades() - cantidadADecrementar);&#xD;
+&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-nwrL9EeuU37F9PQkF7A" name="toString" specification="_LWVd4rL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-nw7L9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return &quot;Articulo [codigo=&quot; + codigo + &quot;, precioCompra=&quot; + precioCompra + &quot;, precioVenta=&quot;&#xD;
+     + precioVenta + &quot;, descripcion=&quot; + descripcion + &quot;, numeroUnidades=&quot; + numeroUnidades&#xD;
+     + &quot;, stockSeguridad=&quot; + stockSeguridad + &quot;, stockMaximo=&quot; + stockMaximo + &quot;]&quot;;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-nxLL9EeuU37F9PQkF7A" name="hashCode" specification="_LWWsAbL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-nxbL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>final int prime = 31;&#xD;
+ int result = 1;&#xD;
+ result = prime * result + codigo;&#xD;
+ return result;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-nxrL9EeuU37F9PQkF7A" name="equals" specification="_LZqesbL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-nx7L9EeuU37F9PQkF7A" name="obj" type="_LZp3obL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZ-nyLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (this == obj)&#xD;
+   return true;&#xD;
+ if (obj == null)&#xD;
+   return false;&#xD;
+ if (getClass() != obj.getClass())&#xD;
+   return false;&#xD;
+ Articulo other = (Articulo) obj;&#xD;
+ if (codigo != other.codigo)&#xD;
+   return false;&#xD;
+ return true;&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_LWRMcLL9EeuU37F9PQkF7A" name="Articulo" visibility="package" method="_LZ9ZoLL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A">
+          <eAnnotations xmi:id="_LWRzgLL9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_LWRzgbL9EeuU37F9PQkF7A" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_LaBrG7L9EeuU37F9PQkF7A">
+            <body>Construtor de la clase Articulo&#xD;
+   * @param precioCompra El precio de compra de un articulo&#xD;
+   * @param precioVenta El precio de venta de un articulo&#xD;
+   * @param descripcion DescripciÃ³n de un articulo&#xD;
+   * @param numeroUnidades Cantidades disponibles del nuevo articulo&#xD;
+   * @param stockSeguridad Stock minimo permitido de un nuevo articulo&#xD;
+   * @param stockMaximo Stock maximo permitido de un nuevo articulo&#xD;
+   * @throws NumeroNegativoException Salta cuando el numero de unidades o el precio de compra es negativo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWRMcbL9EeuU37F9PQkF7A" name="precioCompra">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LWRMcrL9EeuU37F9PQkF7A" name="precioVenta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LWRMc7L9EeuU37F9PQkF7A" name="descripcion">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LWRMdLL9EeuU37F9PQkF7A" name="numeroUnidades">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LWRMdbL9EeuU37F9PQkF7A" name="stockSeguridad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LWRMdrL9EeuU37F9PQkF7A" name="stockMaximo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LWRzgrL9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWSakLL9EeuU37F9PQkF7A" name="Articulo" visibility="package" method="_LZ9ZqLL9EeuU37F9PQkF7A">
+          <eAnnotations xmi:id="_LWSakrL9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_LWSak7L9EeuU37F9PQkF7A" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_LaBrHLL9EeuU37F9PQkF7A">
+            <body>Constructor de la clase articulo cuando solo especificamos el codigo&#xD;
+@param codigo numero entero para identificar un artÃ­culo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWSakbL9EeuU37F9PQkF7A" name="codigo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_LWSalLL9EeuU37F9PQkF7A" type="_LWPXQLL9EeuU37F9PQkF7A" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWTBoLL9EeuU37F9PQkF7A" name="setCodigo" visibility="private" method="_LZ9Zq7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrHbL9EeuU37F9PQkF7A">
+            <body>establece la variable codigo del articulo</body>
+          </ownedComment>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWTBobL9EeuU37F9PQkF7A" name="setPrecioCompra" visibility="private" method="_LZ9ZrLL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrHrL9EeuU37F9PQkF7A">
+            <body>Establece el precio de compra del articulo&#xD;
+@param precioCompra Lo que le cuesta un artÃ­culo al almacen&#xD;
+@throws NumeroNegativoException Cuando el nuemro introducido es negativo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWTBorL9EeuU37F9PQkF7A" name="precioCompra">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWTosLL9EeuU37F9PQkF7A" name="setPrecioVenta" visibility="private" method="_LZ-AsLL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrH7L9EeuU37F9PQkF7A">
+            <body>Establece el precio de venta de un articulo&#xD;
+@param precioVenta cantidad que se recibe por un artÃ­culo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWTosbL9EeuU37F9PQkF7A" name="precioVenta">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWTosrL9EeuU37F9PQkF7A" name="setDescripcion" visibility="private" method="_LZ-AsrL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrILL9EeuU37F9PQkF7A">
+            <body>Establece la descripcion de un articulo&#xD;
+@param descripcion cadena con una breve explicaciÃ³n sobre el producto</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWTos7L9EeuU37F9PQkF7A" name="descripcion">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWUPwLL9EeuU37F9PQkF7A" name="setNumeroUnidades" visibility="private" method="_LZ-AtLL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrIbL9EeuU37F9PQkF7A">
+            <body>establece el numero de unidades&#xD;
+@param cantidad numero de existencias de un artÃ­culo&#xD;
+@throws NumeroNegativoException cuando la cantidad pasada es un numero negativo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWUPwbL9EeuU37F9PQkF7A" name="cantidad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWUPwrL9EeuU37F9PQkF7A" name="setStockSeguridad" visibility="private" method="_LZ-AtrL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaBrIrL9EeuU37F9PQkF7A">
+            <body>establece el stock de seguridad&#xD;
+@param stockSeguridad cantidad minima que debe haber de un articulo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWUPw7L9EeuU37F9PQkF7A" name="stockSeguridad">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWU20LL9EeuU37F9PQkF7A" name="setStockMaximo" visibility="private" method="_LZ-AuLL9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaCSILL9EeuU37F9PQkF7A">
+            <body>Establece el stock maximo&#xD;
+@param stockMaximo cantidad maxima que debe haber de un articulo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWU20bL9EeuU37F9PQkF7A" name="stockMaximo">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWU20rL9EeuU37F9PQkF7A" name="incrementar" visibility="package" method="_LZ-AurL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaCSIbL9EeuU37F9PQkF7A">
+            <body>Este metodo incrementa el numero de unidades de un artÃ­culo&#xD;
+   * &#xD;
+   * @param cantidadAIncrementar la cantidad en la que se va a incrementar el valor&#xD;
+   * @throws NumeroNegativoException si la cantidad en la que se va a aumentar es negativa</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWU207L9EeuU37F9PQkF7A" name="cantidadAIncrementar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWVd4LL9EeuU37F9PQkF7A" name="decrementar" visibility="package" method="_LZ-nwLL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A">
+          <ownedComment xmi:id="_LaCSIrL9EeuU37F9PQkF7A">
+            <body>Este metodo decrementa las unidades disponibles de un artÃ­culo&#xD;
+   * &#xD;
+   * @param cantidadADecrementar la cantidad en la que se va a decrementar el valor&#xD;
+   * @throws NumeroNegativoException si el numero con el que se va a decrementar es negativo</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_LWVd4bL9EeuU37F9PQkF7A" name="cantidadADecrementar">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWVd4rL9EeuU37F9PQkF7A" name="toString" method="_LZ-nwrL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWWE8LL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWWsAbL9EeuU37F9PQkF7A" name="hashCode" method="_LZ-nxLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWWsArL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LZqesbL9EeuU37F9PQkF7A" name="equals" method="_LZ-nxrL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZqesrL9EeuU37F9PQkF7A" name="obj" type="_LZp3obL9EeuU37F9PQkF7A"/>
+          <ownedParameter xmi:id="_LZrFwLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LWaWYLL9EeuU37F9PQkF7A" name="TestAlmacen">
+        <ownedComment xmi:id="_LaCSI7L9EeuU37F9PQkF7A">
+          <body>Clase test para el almacen&#xD;
+@author Sergio Vera Jurado&#xD;
+ *</body>
+        </ownedComment>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ-nybL9EeuU37F9PQkF7A" name="main" specification="_LWa9cLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ-nyrL9EeuU37F9PQkF7A" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LZ-ny7L9EeuU37F9PQkF7A" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>int opcion;&#xD;
+ Menu menu = new Menu(&quot;Almacen&quot;, &quot;Alta de un articulo&quot;, &quot;Incrementar articulo&quot;,&#xD;
+     &quot;Decrementar existencias&quot;, &quot;Mostrar articulo&quot;, &quot;listar almacen&quot;, &quot;eliminar artï¿½culo&quot;,&#xD;
+     &quot;Exportar CSV&quot;, &quot;Importar CSV&quot;, &quot;Exportar XML&quot;, &quot;Importar XML&quot;, &quot;Salir&quot;);&#xD;
+&#xD;
+ Almacen almacen = new Almacen();&#xD;
+/**&#xD;
+ * Inicio del menu en el que se muestran las distintas opciones&#xD;
+ */&#xD;
+ do {&#xD;
+   opcion = menu.elegir();&#xD;
+&#xD;
+   try {&#xD;
+     switch (opcion) {&#xD;
+       case 1:&#xD;
+         almacen.alta(pedirPrecioCompra(), pedirPrecioVenta(), pedirDescripcion(),&#xD;
+             pedirUnidades(), pedirStockSeguridad(), pedirStockMaximo());&#xD;
+         System.out.println(&quot;Operaciï¿½n realizada correctamente&quot;);&#xD;
+         break;&#xD;
+       case 2:&#xD;
+         almacen.incrementarCantidad(pedirCantidad(), pedircodigo());&#xD;
+         System.out.println(&quot;Operaciï¿½n realizada correctamente&quot;);&#xD;
+         break;&#xD;
+       case 3:&#xD;
+         almacen.decrementarCantidad(pedirCantidad(), pedircodigo());&#xD;
+         System.out.println(&quot;Operaciï¿½n realizada correctamente&quot;);&#xD;
+         break;&#xD;
+       case 4:&#xD;
+         System.out.println(almacen.buscarArticulo(pedircodigo()));&#xD;
+         break;&#xD;
+       case 5:&#xD;
+         System.out.println(almacen);&#xD;
+         break;&#xD;
+       case 6:&#xD;
+         System.out.println(almacen.eliminar((pedircodigo())));&#xD;
+         break;&#xD;
+       case 7:&#xD;
+         System.out.println(&quot;Esta opciï¿½n sobrescribre el archivo si ya existe&quot;);&#xD;
+         almacen.guardarCSV(pedirNombre());&#xD;
+         System.out.println(&quot;El CSV se ha guardado correctamente&quot;);&#xD;
+         break;&#xD;
+       case 8:&#xD;
+         Almacen.cargarCSV(pedirNombre());&#xD;
+         System.out.println(&quot;El CSV se ha importado correctamente&quot;);&#xD;
+         break;&#xD;
+       case 9:&#xD;
+         System.out.println(&quot;Esta opciï¿½n sobrescribre el archivo si ya existe&quot;);&#xD;
+         almacen.guardarXML(pedirNombre());&#xD;
+         System.out.println(&quot;El XML se ha guardado correctamente&quot;);&#xD;
+         break;&#xD;
+       case 10:&#xD;
+         Almacen.cargarXml(pedirNombre());&#xD;
+         System.out.println(&quot;El XML se ha importado correctamente&quot;);&#xD;
+         break;&#xD;
+       case 11:&#xD;
+         System.out.println(&quot;Programa finalizado&quot;);&#xD;
+     }&#xD;
+   } catch (NumeroNegativoException | IllegalArgumentException | AlmacenXMLException&#xD;
+       | ArticuloRepetidoException | CodigoNoValidoException | ArticuloInexistenteException&#xD;
+       | AlmacenCSVException e) {&#xD;
+     System.out.println(e.getMessage());&#xD;
+   } catch (IOException e) {&#xD;
+     System.out.println(&quot;El archivo especificado no ha sido encontrado&quot;);&#xD;
+   }&#xD;
+&#xD;
+ } while (opcion != 11);&#xD;
+&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_O0LL9EeuU37F9PQkF7A" name="pedirNombre" specification="_LWcLkLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_O0bL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce el nombre del archivo: &quot;);&#xD;
+ return s.nextLine();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_O0rL9EeuU37F9PQkF7A" name="pedirStockMaximo" specification="_LWcLkrL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_O07L9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce el stock maximo: &quot;);&#xD;
+ return s.nextInt();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_O1LL9EeuU37F9PQkF7A" name="pedirStockSeguridad" specification="_LWcLlLL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_O1bL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce el stock de seguridad: &quot;);&#xD;
+ return s.nextInt();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_O1rL9EeuU37F9PQkF7A" name="pedirUnidades" specification="_LWcyobL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_O17L9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce el numero de unidades: &quot;);&#xD;
+ return s.nextInt();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_O2LL9EeuU37F9PQkF7A" name="pedirDescripcion" specification="_LWcyo7L9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_O2bL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce la descripciÃ³n del articulo: &quot;);&#xD;
+ return s.nextLine();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_O2rL9EeuU37F9PQkF7A" name="pedirPrecioCompra" specification="_LWdZsbL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_O27L9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce el precio de compra del artï¿½culo: &quot;);&#xD;
+ return s.nextDouble();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_O3LL9EeuU37F9PQkF7A" name="pedirPrecioVenta" specification="_LWdZs7L9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_O3bL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce el precio de venta del artï¿½culo: &quot;);&#xD;
+ return s.nextDouble();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_14LL9EeuU37F9PQkF7A" name="pedircodigo" specification="_LWeAwbL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_14bL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce el codigo del artÃ­culo :&quot;);&#xD;
+ return s.nextInt();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LZ_14rL9EeuU37F9PQkF7A" name="pedirCantidad" specification="_LWeAw7L9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LZ_147L9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Scanner s = new Scanner(System.in);&#xD;
+ System.out.println(&quot;Introduce la cantidad :&quot;);&#xD;
+ return s.nextInt();&#xD;
+  </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_LWa9cLL9EeuU37F9PQkF7A" name="main" isStatic="true" method="_LZ-nybL9EeuU37F9PQkF7A" raisedException="_LWkuc7L9EeuU37F9PQkF7A _LWiSMbL9EeuU37F9PQkF7A _LWjgUrL9EeuU37F9PQkF7A _LWhrILL9EeuU37F9PQkF7A _LZii4LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWbkgLL9EeuU37F9PQkF7A" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LWbkgbL9EeuU37F9PQkF7A" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWcLkLL9EeuU37F9PQkF7A" name="pedirNombre" visibility="private" isStatic="true" method="_LZ_O0LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWcLkbL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWcLkrL9EeuU37F9PQkF7A" name="pedirStockMaximo" visibility="private" isStatic="true" method="_LZ_O0rL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWcLk7L9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWcLlLL9EeuU37F9PQkF7A" name="pedirStockSeguridad" visibility="private" isStatic="true" method="_LZ_O1LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWcyoLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWcyobL9EeuU37F9PQkF7A" name="pedirUnidades" visibility="private" isStatic="true" method="_LZ_O1rL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWcyorL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWcyo7L9EeuU37F9PQkF7A" name="pedirDescripcion" visibility="private" isStatic="true" method="_LZ_O2LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWdZsLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWdZsbL9EeuU37F9PQkF7A" name="pedirPrecioCompra" visibility="private" isStatic="true" method="_LZ_O2rL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWdZsrL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWdZs7L9EeuU37F9PQkF7A" name="pedirPrecioVenta" visibility="private" isStatic="true" method="_LZ_O3LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWeAwLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWeAwbL9EeuU37F9PQkF7A" name="pedircodigo" visibility="private" isStatic="true" method="_LZ_14LL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWeAwrL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_LWeAw7L9EeuU37F9PQkF7A" name="pedirCantidad" visibility="private" isStatic="true" method="_LZ_14rL9EeuU37F9PQkF7A">
+          <ownedParameter xmi:id="_LWeAxLL9EeuU37F9PQkF7A" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LaEHULL9EeuU37F9PQkF7A" name="" memberEnd="_LaEHUbL9EeuU37F9PQkF7A _LZvXMLL9EeuU37F9PQkF7A">
+        <ownedEnd xmi:id="_LaEHUbL9EeuU37F9PQkF7A" name="" type="_LVwPELL9EeuU37F9PQkF7A" association="_LaEHULL9EeuU37F9PQkF7A"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_LVa34LL9EeuU37F9PQkF7A" name="utiles">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LZjJ8rL9EeuU37F9PQkF7A" name="Menu"/>
+    </packagedElement>
+    <profileApplication xmi:id="_LFMqkLL9EeuU37F9PQkF7A">
+      <eAnnotations xmi:id="_LFQU8LL9EeuU37F9PQkF7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_LFSxMLL9EeuU37F9PQkF7A" base_Package="_K_3eoLL9EeuU37F9PQkF7A">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LV7OMrL9EeuU37F9PQkF7A" base_Element="_LV7OMLL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Annotations xmi:id="_LV71QLL9EeuU37F9PQkF7A" base_Element="_LV7OMLL9EeuU37F9PQkF7A">
+    <annotations xmi:id="_LV8cULL9EeuU37F9PQkF7A" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LWWE8bL9EeuU37F9PQkF7A" base_Element="_LWVd4rL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Annotations xmi:id="_LWWE8rL9EeuU37F9PQkF7A" base_Element="_LWVd4rL9EeuU37F9PQkF7A">
+    <annotations xmi:id="_LWWsALL9EeuU37F9PQkF7A" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LWXTELL9EeuU37F9PQkF7A" base_Element="_LWWsAbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Annotations xmi:id="_LWXTEbL9EeuU37F9PQkF7A" base_Element="_LWWsAbL9EeuU37F9PQkF7A">
+    <annotations xmi:id="_LWXTErL9EeuU37F9PQkF7A" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_LZNLsLL9EeuU37F9PQkF7A" base_Element="_LZMkoLL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZOZ0LL9EeuU37F9PQkF7A" base_Element="_LZNywLL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZPn8LL9EeuU37F9PQkF7A" base_Element="_LZPA4LL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZQPALL9EeuU37F9PQkF7A" base_Element="_LZPn8bL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZQ2ELL9EeuU37F9PQkF7A" base_Element="_LZQPAbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZQ2ErL9EeuU37F9PQkF7A" base_Element="_LZQ2EbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZRdILL9EeuU37F9PQkF7A" base_Element="_LZQ2E7L9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZSEMLL9EeuU37F9PQkF7A" base_Element="_LZRdIbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZSrQLL9EeuU37F9PQkF7A" base_Element="_LZSEMbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZTSULL9EeuU37F9PQkF7A" base_Element="_LZSrQbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZTSUrL9EeuU37F9PQkF7A" base_Element="_LZTSUbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZT5YLL9EeuU37F9PQkF7A" base_Element="_LZTSU7L9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZUgcLL9EeuU37F9PQkF7A" base_Element="_LZT5YbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZVHgLL9EeuU37F9PQkF7A" base_Element="_LZUgcbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZVHgrL9EeuU37F9PQkF7A" base_Element="_LZVHgbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZVukLL9EeuU37F9PQkF7A" base_Element="_LZVHg7L9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZWVoLL9EeuU37F9PQkF7A" base_Element="_LZVukbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZW8sLL9EeuU37F9PQkF7A" base_Element="_LZWVobL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZbOILL9EeuU37F9PQkF7A" base_Element="_LZW8sbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZb1MbL9EeuU37F9PQkF7A" base_Element="_LZb1MLL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZccQLL9EeuU37F9PQkF7A" base_Element="_LZb1MrL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZccQrL9EeuU37F9PQkF7A" base_Element="_LZccQbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZii4bL9EeuU37F9PQkF7A" base_Element="_LZii4LL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZjJ8bL9EeuU37F9PQkF7A" base_Element="_LZjJ8LL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZjxALL9EeuU37F9PQkF7A" base_Element="_LZjJ8rL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LZqesLL9EeuU37F9PQkF7A" base_Element="_LZp3obL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LZrFwbL9EeuU37F9PQkF7A" base_Element="_LZqesbL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Annotations xmi:id="_LZrFwrL9EeuU37F9PQkF7A" base_Element="_LZqesbL9EeuU37F9PQkF7A">
+    <annotations xmi:id="_LZrFw7L9EeuU37F9PQkF7A" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_LZsT4bL9EeuU37F9PQkF7A" base_Element="_LZsT4LL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Generics xmi:id="_LZvXMbL9EeuU37F9PQkF7A" genericsValue="Articulo" base_Element="_LZvXMLL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LZv-QLL9EeuU37F9PQkF7A" base_Element="_LZvXMLL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_LZwlUrL9EeuU37F9PQkF7A" base_Element="_LZwlULL9EeuU37F9PQkF7A"/>
+  <UMLLabProfile:Reference xmi:id="_LaEuYLL9EeuU37F9PQkF7A" base_Element="_LaEHULL9EeuU37F9PQkF7A"/>
+</xmi:XMI>
