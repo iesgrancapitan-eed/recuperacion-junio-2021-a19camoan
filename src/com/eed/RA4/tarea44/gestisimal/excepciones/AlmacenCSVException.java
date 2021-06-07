@@ -6,13 +6,17 @@ package com.eed.RA4.tarea44.gestisimal.excepciones;
  */
 public class AlmacenCSVException extends Exception {
 
-  /**
-   * 
-   */
-  private static final long serialVersionUID = 4760983661709172079L;
+	/**
+	 * Generamos serialVersionUID para evitar un InvalidClassException
+	 */
+	private static final long serialVersionUID = 4760983661709172079L;
 
-  public AlmacenCSVException(String string) {
-    super(string);
-  }
+	/**
+	 * genera AlmacenCSVException
+	 * @param string
+	 */
+	public AlmacenCSVException(String string) {
+		super(string);
+	}
 
 }

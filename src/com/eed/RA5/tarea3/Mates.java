@@ -1,4 +1,4 @@
-package ejercicio5_3;
+package com.eed.RA5.tarea3;
 
 public class Mates extends Fraccion{
 

@@ -6,13 +6,17 @@ package com.eed.RA4.tarea44.gestisimal.excepciones;
  */
 public class AlmacenXMLException extends Exception {
 
-  /**
-   * 
-   */
-  private static final long serialVersionUID = 1689646165076599118L;
+	/**
+	 * Generamos serialVersionUID para evitar un InvalidClassException
+	 */
+	private static final long serialVersionUID = 1689646165076599118L;
 
-  public AlmacenXMLException(String string) {
-    super(string);
-  }
+	/**
+	 * genera AlmacenXMLException
+	 * @param string
+	 */
+	public AlmacenXMLException(String string) {
+		super(string);
+	}
 
 }

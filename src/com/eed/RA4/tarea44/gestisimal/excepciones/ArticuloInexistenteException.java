@@ -5,14 +5,19 @@ package com.eed.RA4.tarea44.gestisimal.excepciones;
  *
  */
 public class ArticuloInexistenteException extends Exception {
-  public ArticuloInexistenteException(String string) {
-    super(string);
-  }
-  
 
-  /**
-   * 
-   */
-  private static final long serialVersionUID = -2308106173277932565L;
+	/**
+	 * genera ArticuloInexistenteException
+	 * @param string
+	 */
+	public ArticuloInexistenteException(String string) {
+		super(string);
+	}
+
+
+	/**
+	 * Generamos serialVersionUID para evitar un InvalidClassException
+	 */
+	private static final long serialVersionUID = -2308106173277932565L;
 
 }

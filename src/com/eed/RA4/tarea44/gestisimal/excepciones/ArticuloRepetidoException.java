@@ -6,14 +6,18 @@ package com.eed.RA4.tarea44.gestisimal.excepciones;
  *
  */
 public class ArticuloRepetidoException extends Exception {
-  
-  /**
-   * 
-   */
-  private static final long serialVersionUID = -5275867970911297179L;
 
-  public ArticuloRepetidoException(String string) {
-    super(string);
-  }
+	/**
+	 * Generamos serialVersionUID para evitar un InvalidClassException
+	 */
+	private static final long serialVersionUID = -5275867970911297179L;
+
+	/**
+	 * genera ArticuloRepetidoException
+	 * @param string
+	 */
+	public ArticuloRepetidoException(String string) {
+		super(string);
+	}
 
 }

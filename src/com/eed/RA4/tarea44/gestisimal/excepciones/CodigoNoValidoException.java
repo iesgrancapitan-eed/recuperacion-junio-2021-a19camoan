@@ -6,12 +6,17 @@ package com.eed.RA4.tarea44.gestisimal.excepciones;
  *
  */
 public class CodigoNoValidoException extends Exception {
-  /**
-   * 
-   */
-  private static final long serialVersionUID = 4954135465152486030L;
+	
+	/**
+	 * Generamos serialVersionUID para evitar un InvalidClassException
+	 */
+	private static final long serialVersionUID = 4954135465152486030L;
 
-  public CodigoNoValidoException(String string) {
-    super(string);
-  }
+	/**
+	 * genera CodigoNoValidoException
+	 * @param string
+	 */
+	public CodigoNoValidoException(String string) {
+		super(string);
+	}
 }
