@@ -1,4 +1,4 @@
 /**
  * suministra clases para facilitar el trabajo a las clases principales
  */
-package utiles;
+package com.eed.RA4.tarea44.utiles;
