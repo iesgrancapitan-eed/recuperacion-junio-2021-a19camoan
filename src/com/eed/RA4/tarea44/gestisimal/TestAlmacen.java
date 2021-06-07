@@ -67,18 +67,9 @@ public class TestAlmacen {
 					System.out.println("El CSV se ha importado correctamente");
 					break;
 				case 9:
-					System.out.println("Esta opción sobrescribre el archivo si ya existe");
-					almacen.guardarXML(pedirNombre());
-					System.out.println("El XML se ha guardado correctamente");
-					break;
-				case 10:
-					Almacen.cargarXml(pedirNombre());
-					System.out.println("El XML se ha importado correctamente");
-					break;
-				case 11:
 					System.out.println("Programa finalizado");
 				}
-			} catch (NumeroNegativoException | IllegalArgumentException | AlmacenXMLException
+			} catch (NumeroNegativoException | IllegalArgumentException
 					| ArticuloRepetidoException | CodigoNoValidoException | ArticuloInexistenteException
 					| AlmacenCSVException e) {
 				System.out.println(e.getMessage());
@@ -86,7 +77,7 @@ public class TestAlmacen {
 				System.out.println("El archivo especificado no ha sido encontrado");
 			}
 
-		} while (opcion != 11);
+		} while (opcion != 9);
 
 	}
 	/**
@@ -99,7 +90,7 @@ public class TestAlmacen {
 		System.out.println("Introduce el nombre del archivo: ");
 		return s.nextLine();
 	}
-	
+
 	/**
 	 * pide el stock máximo
 	 * @return int
@@ -109,7 +100,7 @@ public class TestAlmacen {
 		System.out.println("Introduce el stock maximo: ");
 		return s.nextInt();
 	}
-	
+
 	/**
 	 * pide el stock de seguridad
 	 * @return int
@@ -119,7 +110,7 @@ public class TestAlmacen {
 		System.out.println("Introduce el stock de seguridad: ");
 		return s.nextInt();
 	}
-	
+
 	/**
 	 * pide el número de unidades
 	 * @return int
@@ -147,7 +138,7 @@ public class TestAlmacen {
 		System.out.println("Introduce el precio de compra del art�culo: ");
 		return s.nextDouble();
 	}
-	
+
 	/**
 	 * pide el precio de venta de un artículo
 	 * @return int
@@ -157,7 +148,7 @@ public class TestAlmacen {
 		System.out.println("Introduce el precio de venta del art�culo: ");
 		return s.nextDouble();
 	}
-	
+
 	/**
 	 * pide el codigo de un artículo
 	 * @return int

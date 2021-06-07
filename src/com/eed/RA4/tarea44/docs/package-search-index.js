@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"m":"andresCastilleroMorianaJunio","l":"com.eed.RA4.tarea44.gestisimal"},{"m":"andresCastilleroMorianaJunio","l":"com.eed.RA4.tarea44.gestisimal.excepciones"},{"m":"andresCastilleroMorianaJunio","l":"com.eed.RA4.tarea44.utiles"}]

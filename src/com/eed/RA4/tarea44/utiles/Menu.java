@@ -37,7 +37,7 @@ public class Menu {
 		for (int i = 0; i < this.opciones.size(); i++) {
 			System.out.println((i+1) + ". " + this.opciones.get(i));
 		}
-		System.out.print("\nIntroduce una opci�n: ");
+		System.out.print("\nIntroduce una opción: ");
 
 		Scanner s = new Scanner(System.in);
 		int opcion = s.nextInt();
