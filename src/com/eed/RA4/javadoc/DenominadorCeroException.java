@@ -1,17 +1,18 @@
 package com.eed.RA4.javadoc;
 
 /**
- * Si el denominador es 0.
+ * Lanzado para indicar que el denominador es 0.
  * @author Andrés Castillero Moriana
  *
  */
 public class DenominadorCeroException extends Exception {
 
   /**
-   * genera DenominadorCeroException
-   * @param string
+   * crea la excepcion DenominadorCeroException
+   * @param string indica la descripcion del error
    */
   public DenominadorCeroException(String string) {
+	  super(string);
   }
 
   /**

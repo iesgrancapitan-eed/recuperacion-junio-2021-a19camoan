@@ -55,7 +55,7 @@ public class Fraccion {
 
 	/**
 	 * establece el denominador de la fracción
-	 * @param denominador
+	 * @param denominador Denominador de una fracción o división
 	 * @throws DenominadorCeroException Cuando el denominador es 0
 	 */
 	public void setDenominador(int denominador) throws DenominadorCeroException {
@@ -67,7 +67,7 @@ public class Fraccion {
 
 	/**
 	 * establece el numerador de la fracción
-	 * @param numerador
+	 * @param numerador Numerador de una fracción o división
 	 */
 	public void setNumerador(int numerador) {
 		this.numerador = numerador;
@@ -92,7 +92,7 @@ public class Fraccion {
 
 	/**
 	 * Devuelve el resultado de la multiplicación entre numerador y denominador
-	 * @param f
+	 * @param f Objeto Fraccion
 	 * @return Fraccion Objeto fracción con el valor de la multiplicación de las 2 fracciones que se pasan como parámetros
 	 */
 	public Fraccion multiplicacion(Fraccion f) {
@@ -101,8 +101,8 @@ public class Fraccion {
 
 	/**
 	 * Devuelve el resultado de la suma entre numerador y denominador
-	 * @param f
-	 * @return Fraccion Objeto fracción con el valor de la suma de las 2 fracciones que se pasan como parámetros
+	 * @param f Objeto Fraccion
+	 * @return Fraccion Objeto fracción con el valor de la suma de la fracción que se pasa como parámetro
 	 */
 	public Fraccion suma(Fraccion f) {
 		return new Fraccion (((this.numerador * f.denominador) + (this.denominador * f.numerador)) , (this.denominador * f.denominador));
@@ -110,8 +110,8 @@ public class Fraccion {
 
 	/**
 	 * Devuelve el resultado de la resta entre numerador y denominador
-	 * @param f
-	 * @return Fraccion Objeto fracción con el valor de la resta de las 2 fracciones que se pasan como parámetros
+	 * @param f Objeto Fraccion
+	 * @return Fraccion Objeto fracción con el valor de la resta de la fracción que se pasa como parámetro
 	 */
 	public Fraccion resta(Fraccion f) {
 		return new Fraccion (((this.numerador * f.denominador) - (this.denominador * f.numerador)) , (this.denominador * f.denominador));
@@ -137,7 +137,7 @@ public class Fraccion {
 
 	/**
 	 * Simplifica la fracción
-	 * @param f
+	 * @param f Objeto Fraccion
 	 */
 	public void simplifica(Fraccion f) {
 		int mcd = Fraccion.mcd(this.numerador, this.denominador);
