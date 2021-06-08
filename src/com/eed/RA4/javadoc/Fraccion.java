@@ -54,9 +54,9 @@ public class Fraccion {
 	}
 
 	/**
-	 * establece la variable denominador de la fracción
+	 * establece el denominador de la fracción
 	 * @param denominador
-	 * @throws DenominadorCeroException
+	 * @throws DenominadorCeroException Cuando el denominador es 0
 	 */
 	public void setDenominador(int denominador) throws DenominadorCeroException {
 		if(this.denominador == 0) {
@@ -66,7 +66,7 @@ public class Fraccion {
 	}
 
 	/**
-	 * establece la variable numerador de la fracción
+	 * establece el numerador de la fracción
 	 * @param numerador
 	 */
 	public void setNumerador(int numerador) {
