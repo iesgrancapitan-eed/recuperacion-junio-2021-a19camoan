@@ -1,18 +1,10 @@
 package com.eed.RA4.javadoc;
 
 /**
- * Crea una clase Fraccion de forma que podamos hacer las siguientes operaciones:
- *
- *  ·Contruir un objeto Fraccion pasándole el numerador y el denominador.
- *  ·Obtener la fracción como cadena de caracteres.
- *  ·Obtener y modificar numerador y denominador. No se puede dividir por cero.
- *  ·Obtener resultado de la fracción (número real).
- *  ·Multiplicar la fracción por un número (el resultado es otro objeto fracción).
- *  ·Multiplicar, sumar y restar fracciones (el resultado es otro objeto fracción).
- *  ·Simplificar la fracción (cambia el objeto actual).
-
+ * Compuesta por un numerador y un denominador. Constructor para 1 parámetro y 2 parámetros.
+ * Incluye funciones para dividir, multiplicar, sumar y restar.
+ * toString modificado.
  * @author Andrés Castillero Moriana
- * 
  */
 public class Fraccion {
 
@@ -27,7 +19,7 @@ public class Fraccion {
 	protected int denominador;
 
 	/**
-	 * Crea un objeto Fraccion al pasarle un numerador y un denominador
+	 * Crea un objeto Fraccion con el numerador y denominador indicados
 	 * @param numerador Numerador de una fracción o división
 	 * @param denominador Denominador de una fracción o división
 	 */
@@ -37,8 +29,8 @@ public class Fraccion {
 	}
 
 	/**
-	 * Crea un objeto Fraccion al pasarle solo un número. El numerador será el número introducido y el denominador 1.
-	 * @param numerador
+	 * Crea un objeto Fraccion al indicarle solo un número. El numerador será el número introducido y el denominador 1.
+	 * @param numerador Numerador de una fracción o división
 	 */
 	public Fraccion (int numerador) {
 		this.numerador = numerador;
@@ -82,7 +74,7 @@ public class Fraccion {
 	}
 
 	/**
-	 * Visualización del objeto fracción
+	 * Representación en cadena del objeto fracción
 	 */
 	public String toString() {
 		return " " + this.numerador + "\n" + 
@@ -91,7 +83,7 @@ public class Fraccion {
 	}
 
 	/**
-	 * Este método devuelve el resultado de la división entre numerador y denominador
+	 * Devuelve el resultado de la división entre numerador y denominador
 	 * @return double Divide numerador entre denominador
 	 */
 	public double result() {
@@ -99,7 +91,7 @@ public class Fraccion {
 	}
 
 	/**
-	 * Este método devuelve el resultado de la multiplicación entre numerador y denominador
+	 * Devuelve el resultado de la multiplicación entre numerador y denominador
 	 * @param f
 	 * @return Fraccion Objeto fracción con el valor de la multiplicación de las 2 fracciones que se pasan como parámetros
 	 */
@@ -108,7 +100,7 @@ public class Fraccion {
 	}
 
 	/**
-	 * Este método devuelve el resultado de la suma entre numerador y denominador
+	 * Devuelve el resultado de la suma entre numerador y denominador
 	 * @param f
 	 * @return Fraccion Objeto fracción con el valor de la suma de las 2 fracciones que se pasan como parámetros
 	 */
@@ -117,7 +109,7 @@ public class Fraccion {
 	}
 
 	/**
-	 * Este método devuelve el resultado de la resta entre numerador y denominador
+	 * Devuelve el resultado de la resta entre numerador y denominador
 	 * @param f
 	 * @return Fraccion Objeto fracción con el valor de la resta de las 2 fracciones que se pasan como parámetros
 	 */
