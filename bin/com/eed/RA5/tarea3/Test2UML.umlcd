@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_U9xO4LvUEeuG9pmp9hD-gA">
+  <modelElement href="Test2UML.uml#_VHd9cLvUEeuG9pmp9hD-gA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_X9uY4LvUEeuG9pmp9hD-gA" source="_X9uY6bvUEeuG9pmp9hD-gA">
+    <modelElement href="Test2UML.uml#_VIf4MLvUEeuG9pmp9hD-gA"/>
+    <stereotypes xmi:id="_X9uY4bvUEeuG9pmp9hD-gA" name="Reference">
+      <modelElement href="Test2UML.uml#_VIhGULvUEeuG9pmp9hD-gA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_X9uY4rvUEeuG9pmp9hD-gA" text=""/>
+    <sourceRole xmi:id="_X9uY47vUEeuG9pmp9hD-gA" aggregationKind="NONE" name="">
+      <modelElement href="Test2UML.uml#_VIf4MbvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uY5LvUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uY5bvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_X9uY5rvUEeuG9pmp9hD-gA" aggregationKind="NONE" name="s" navigable="true">
+      <modelElement href="Test2UML.uml#_VITq8LvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uY57vUEeuG9pmp9hD-gA" label="~"/>
+      <cardinality xmi:id="_X9uY6LvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_X-U10LvUEeuG9pmp9hD-gA" sourceAnchor="147.0,0.0" targetAnchor="212.0,415.0" superClass="_X9uY6bvUEeuG9pmp9hD-gA" subClass="_X-0lELvUEeuG9pmp9hD-gA">
+    <modelElement href="Test2UML.uml#_VIR1wLvUEeuG9pmp9hD-gA"/>
+    <bendpoints xmi:id="_YXOeALvUEeuG9pmp9hD-gA" sourceY="-21" targetX="-260" targetY="14"/>
+    <bendpoints xmi:id="_YXOeAbvUEeuG9pmp9hD-gA" sourceX="260" sourceY="-21" targetY="14"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ContainmentVisual" xmi:id="_YBW7sLvUEeuG9pmp9hD-gA" sourceAnchor="47.0,0.0" targetAnchor="47.0,62.0" enclosingItem="_YAZ5cLvUEeuG9pmp9hD-gA" containedItem="_YB_04LvUEeuG9pmp9hD-gA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ContainmentVisual" xmi:id="_YDcmYLvUEeuG9pmp9hD-gA" sourceAnchor="212.0,0.0" targetAnchor="58.0,62.0" enclosingItem="_YElO0LvUEeuG9pmp9hD-gA" containedItem="_X9uY6bvUEeuG9pmp9hD-gA">
+    <bendpoints xmi:id="_YXNP4LvUEeuG9pmp9hD-gA" sourceY="-13" targetX="247" targetY="34"/>
+    <bendpoints xmi:id="_YXN28LvUEeuG9pmp9hD-gA" sourceX="-247" sourceY="-13" targetY="34"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ContainmentVisual" xmi:id="_YEPQkLvUEeuG9pmp9hD-gA" sourceAnchor="134.0,0.0" targetAnchor="58.0,62.0" enclosingItem="_YElO0LvUEeuG9pmp9hD-gA" containedItem="_X-0lELvUEeuG9pmp9hD-gA">
+    <bendpoints xmi:id="_YXOeArvUEeuG9pmp9hD-gA" sourceY="-463" targetX="-26" targetY="34"/>
+    <bendpoints xmi:id="_YXOeA7vUEeuG9pmp9hD-gA" sourceX="26" sourceY="-463" targetY="34"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X9uY6bvUEeuG9pmp9hD-gA" containment="_YDcmYLvUEeuG9pmp9hD-gA" name="Fraccion" package="_YElO0LvUEeuG9pmp9hD-gA" associationsOut="_X9uY4LvUEeuG9pmp9hD-gA" subclassedBy="_X-U10LvUEeuG9pmp9hD-gA">
+    <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+    <visualProperties xmi:id="_X9uY6rvUEeuG9pmp9hD-gA" position="205.0,140.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_X9uY67vUEeuG9pmp9hD-gA" label="+"/>
+    <attributes xmi:id="_X9uY7LvUEeuG9pmp9hD-gA" defaultValue="new Scanner(System.in)" name="s">
+      <modelElement href="Test2UML.uml#_VITq8LvUEeuG9pmp9hD-gA"/>
+      <stereotypes xmi:id="_X9uY7bvUEeuG9pmp9hD-gA" name="LegacyStyledElement">
+        <modelElement href="Test2UML.uml#_VIU5ELvUEeuG9pmp9hD-gA"/>
+      </stereotypes>
+      <visibility xmi:id="_X9uY7rvUEeuG9pmp9hD-gA" label="~"/>
+      <cardinality xmi:id="_X9uY77vUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_X9uY8LvUEeuG9pmp9hD-gA" name="Scanner">
+        <modelElement href="Test2UML.uml#_VIKhALvUEeuG9pmp9hD-gA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_X9uY8bvUEeuG9pmp9hD-gA" name="numerador">
+      <modelElement href="Test2UML.uml#_VIU5EbvUEeuG9pmp9hD-gA"/>
+      <stereotypes xmi:id="_X9uY8rvUEeuG9pmp9hD-gA" name="LegacyStyledElement">
+        <modelElement href="Test2UML.uml#_VIVgILvUEeuG9pmp9hD-gA"/>
+      </stereotypes>
+      <visibility xmi:id="_X9uY87vUEeuG9pmp9hD-gA" label="#"/>
+      <cardinality xmi:id="_X9uY9LvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_X9uY9bvUEeuG9pmp9hD-gA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_X9uY9rvUEeuG9pmp9hD-gA" name="denominador">
+      <modelElement href="Test2UML.uml#_VIVgIbvUEeuG9pmp9hD-gA"/>
+      <stereotypes xmi:id="_X9uY97vUEeuG9pmp9hD-gA" name="LegacyStyledElement">
+        <modelElement href="Test2UML.uml#_VIWHMLvUEeuG9pmp9hD-gA"/>
+      </stereotypes>
+      <visibility xmi:id="_X9uY-LvUEeuG9pmp9hD-gA" label="#"/>
+      <cardinality xmi:id="_X9uY-bvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_X9uY-rvUEeuG9pmp9hD-gA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_X9uY-7vUEeuG9pmp9hD-gA" name="Fraccion">
+      <modelElement href="Test2UML.uml#_VHqxwLvUEeuG9pmp9hD-gA"/>
+      <keywords xmi:id="_X9uY_LvUEeuG9pmp9hD-gA" keyword="create"/>
+      <visibility xmi:id="_X9uY_bvUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uY_rvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9uY_7vUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VHrY1LvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9uZALvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X9uZAbvUEeuG9pmp9hD-gA" name="numerador">
+        <modelElement href="Test2UML.uml#_VHrY0LvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9uZArvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9uZA7vUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_X9uZBLvUEeuG9pmp9hD-gA" name="denominador">
+        <modelElement href="Test2UML.uml#_VHrY0bvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9uZBbvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9uZBrvUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X9uZB7vUEeuG9pmp9hD-gA" name="Fraccion">
+      <modelElement href="Test2UML.uml#_VHtOALvUEeuG9pmp9hD-gA"/>
+      <keywords xmi:id="_X9uZCLvUEeuG9pmp9hD-gA" keyword="create"/>
+      <visibility xmi:id="_X9uZCbvUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uZCrvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9uZC7vUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VHt1ErvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9uZDLvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X9uZDbvUEeuG9pmp9hD-gA" name="numerador">
+        <modelElement href="Test2UML.uml#_VHtOAbvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9uZDrvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9uZD7vUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X9uZELvUEeuG9pmp9hD-gA" name="getDenominador">
+      <modelElement href="Test2UML.uml#_VHt1E7vUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uZEbvUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uZErvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9uZE7vUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VHucILvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9uZFLvUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_X9uZFbvUEeuG9pmp9hD-gA" name="getNumerador">
+      <modelElement href="Test2UML.uml#_VHucIbvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uZFrvUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uZF7vUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9uZGLvUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VHvDMLvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9uZGbvUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_X9uZGrvUEeuG9pmp9hD-gA" name="setDenominador">
+      <modelElement href="Test2UML.uml#_VHvDMbvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uZG7vUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uZHLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_X9uZHbvUEeuG9pmp9hD-gA" name="denominador">
+        <modelElement href="Test2UML.uml#_VHvqQLvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9uZHrvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9uZH7vUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X9uZILvUEeuG9pmp9hD-gA" name="setNumerador">
+      <modelElement href="Test2UML.uml#_VHvqQbvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uZIbvUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uZIrvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_X9uZI7vUEeuG9pmp9hD-gA" name="numerador">
+        <modelElement href="Test2UML.uml#_VHvqQrvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9uZJLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9uZJbvUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X9uZJrvUEeuG9pmp9hD-gA" name="toString">
+      <modelElement href="Test2UML.uml#_VHwRULvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uZJ7vUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uZKLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9uZKbvUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VHwRUbvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9uZKrvUEeuG9pmp9hD-gA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_X9uZK7vUEeuG9pmp9hD-gA" name="result">
+      <modelElement href="Test2UML.uml#_VHw4YLvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uZLLvUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9uZLbvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9uZLrvUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VHw4YbvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9uZL7vUEeuG9pmp9hD-gA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_X9uZMLvUEeuG9pmp9hD-gA" name="mcd" staticOperation="true">
+      <modelElement href="Test2UML.uml#_VHxfcLvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9uZMbvUEeuG9pmp9hD-gA" label="~"/>
+      <cardinality xmi:id="_X9uZMrvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9uZM7vUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VHyGgbvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9uZNLvUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X9uZNbvUEeuG9pmp9hD-gA" name="a">
+        <modelElement href="Test2UML.uml#_VHxfcbvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9uZNrvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9uZN7vUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_X9uZOLvUEeuG9pmp9hD-gA" name="b">
+        <modelElement href="Test2UML.uml#_VHyGgLvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9u_8LvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9u_8bvUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X9u_8rvUEeuG9pmp9hD-gA" name="multiplicacion">
+      <modelElement href="Test2UML.uml#_VIMWMLvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9u_87vUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9u_9LvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9u_9bvUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VIM9QbvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9u_9rvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X9u_97vUEeuG9pmp9hD-gA" name="f">
+        <modelElement href="Test2UML.uml#_VIM9QLvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9u_-LvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9u_-bvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X9u_-rvUEeuG9pmp9hD-gA" name="suma">
+      <modelElement href="Test2UML.uml#_VINkULvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9u_-7vUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9u__LvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9u__bvUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VINkUrvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9u__rvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X9u__7vUEeuG9pmp9hD-gA" name="f">
+        <modelElement href="Test2UML.uml#_VINkUbvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9vAALvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9vAAbvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X9vAArvUEeuG9pmp9hD-gA" name="resta">
+      <modelElement href="Test2UML.uml#_VIOLYLvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9vAA7vUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9vABLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X9vABbvUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VIOLYrvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X9vABrvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X9vAB7vUEeuG9pmp9hD-gA" name="f">
+        <modelElement href="Test2UML.uml#_VIOLYbvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9vACLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9vACbvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X9vACrvUEeuG9pmp9hD-gA" name="simplifica">
+      <modelElement href="Test2UML.uml#_VIOycLvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X9vAC7vUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X9vADLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_X9vADbvUEeuG9pmp9hD-gA" name="f">
+        <modelElement href="Test2UML.uml#_VIOycbvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X9vADrvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X9vAD7vUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_X-0lELvUEeuG9pmp9hD-gA" containment="_YEPQkLvUEeuG9pmp9hD-gA" name="Mates" package="_YElO0LvUEeuG9pmp9hD-gA" generalizations="_X-U10LvUEeuG9pmp9hD-gA">
+    <modelElement href="Test2UML.uml#_VH1w4LvUEeuG9pmp9hD-gA"/>
+    <visualProperties xmi:id="_X-0lEbvUEeuG9pmp9hD-gA" position="10.0,590.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_X-0lErvUEeuG9pmp9hD-gA" label="+"/>
+    <attributes xmi:id="_X-0lE7vUEeuG9pmp9hD-gA" name="numerador">
+      <modelElement href="Test2UML.uml#_VIWuQLvUEeuG9pmp9hD-gA"/>
+      <stereotypes xmi:id="_X-0lFLvUEeuG9pmp9hD-gA" name="LegacyStyledElement">
+        <modelElement href="Test2UML.uml#_VIXVULvUEeuG9pmp9hD-gA"/>
+      </stereotypes>
+      <visibility xmi:id="_X-0lFbvUEeuG9pmp9hD-gA" label="~"/>
+      <cardinality xmi:id="_X-0lFrvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_X-0lF7vUEeuG9pmp9hD-gA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_X-0lGLvUEeuG9pmp9hD-gA" name="denominador">
+      <modelElement href="Test2UML.uml#_VIXVUbvUEeuG9pmp9hD-gA"/>
+      <stereotypes xmi:id="_X-0lGbvUEeuG9pmp9hD-gA" name="LegacyStyledElement">
+        <modelElement href="Test2UML.uml#_VIX8YLvUEeuG9pmp9hD-gA"/>
+      </stereotypes>
+      <visibility xmi:id="_X-0lGrvUEeuG9pmp9hD-gA" label="~"/>
+      <cardinality xmi:id="_X-0lG7vUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_X-0lHLvUEeuG9pmp9hD-gA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_X-0lHbvUEeuG9pmp9hD-gA" name="Mates">
+      <modelElement href="Test2UML.uml#_VH2X8LvUEeuG9pmp9hD-gA"/>
+      <keywords xmi:id="_X-0lHrvUEeuG9pmp9hD-gA" keyword="create"/>
+      <visibility xmi:id="_X-0lH7vUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X-0lILvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X-0lIbvUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VH2_A7vUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X-0lIrvUEeuG9pmp9hD-gA" name="Mates">
+          <modelElement href="Test2UML.uml#_VH1w4LvUEeuG9pmp9hD-gA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X-0lI7vUEeuG9pmp9hD-gA" name="numerador">
+        <modelElement href="Test2UML.uml#_VH2_ALvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X-0lJLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X-0lJbvUEeuG9pmp9hD-gA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_X-0lJrvUEeuG9pmp9hD-gA" name="suma">
+      <modelElement href="Test2UML.uml#_VIROsLvUEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_X-0lJ7vUEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_X-0lKLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_X-0lKbvUEeuG9pmp9hD-gA">
+        <modelElement href="Test2UML.uml#_VIROsrvUEeuG9pmp9hD-gA"/>
+        <type xmi:id="_X-0lKrvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_X-0lK7vUEeuG9pmp9hD-gA" name="f">
+        <modelElement href="Test2UML.uml#_VIROsbvUEeuG9pmp9hD-gA"/>
+        <cardinality xmi:id="_X-0lLLvUEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+        <type xmi:id="_X-0lLbvUEeuG9pmp9hD-gA" name="Fraccion">
+          <modelElement href="Test2UML.uml#_VHpjoLvUEeuG9pmp9hD-gA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_X_U7YLvUEeuG9pmp9hD-gA" name="Test2UML">
+    <modelElement href="Test2UML.uml#_U8cZMLvUEeuG9pmp9hD-gA"/>
+    <visualProperties xmi:id="_X_VicLvUEeuG9pmp9hD-gA" position="14.0,784.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_YAZ5cLvUEeuG9pmp9hD-gA" containments="_YBW7sLvUEeuG9pmp9hD-gA" name="java">
+    <modelElement href="Test2UML.uml#_VHX20LvUEeuG9pmp9hD-gA"/>
+    <visualProperties xmi:id="_YAZ5cbvUEeuG9pmp9hD-gA" position="695.0,31.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_YB_04LvUEeuG9pmp9hD-gA" containment="_YBW7sLvUEeuG9pmp9hD-gA" name="util">
+    <modelElement href="Test2UML.uml#_VHX20bvUEeuG9pmp9hD-gA"/>
+    <visualProperties xmi:id="_YB_04bvUEeuG9pmp9hD-gA" position="695.0,121.0" size="-1.0,-1.0"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:PackageVisual" xmi:id="_YElO0LvUEeuG9pmp9hD-gA" containments="_YDcmYLvUEeuG9pmp9hD-gA _YEPQkLvUEeuG9pmp9hD-gA" classes="_X9uY6bvUEeuG9pmp9hD-gA _X-0lELvUEeuG9pmp9hD-gA" name="ejercicio5_3">
+    <modelElement href="Test2UML.uml#_VHd9cLvUEeuG9pmp9hD-gA"/>
+    <visualProperties xmi:id="_YElO0bvUEeuG9pmp9hD-gA" position="112.0,31.0" size="-1.0,-1.0"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

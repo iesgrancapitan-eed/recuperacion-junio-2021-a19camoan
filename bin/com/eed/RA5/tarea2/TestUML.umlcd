@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_krUngLvBEeuG9pmp9hD-gA">
+  <modelElement href="TestUML.uml#_koxp0LvBEeuG9pmp9hD-gA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_f5QfULvEEeuG9pmp9hD-gA" name="Perro">
+    <modelElement href="TestUML.uml#_f5P4QLvEEeuG9pmp9hD-gA"/>
+    <visualProperties xmi:id="_f5QfUbvEEeuG9pmp9hD-gA" position="582.0,95.0" size="230.0,189.0"/>
+    <visibility xmi:id="_f5QfUrvEEeuG9pmp9hD-gA" label="+"/>
+    <attributes xmi:id="_eOslgLvFEeuG9pmp9hD-gA" name="raza">
+      <modelElement href="TestUML.uml#_eOrXYLvFEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_eOslgbvFEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_eOslgrvFEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_eOslg7vFEeuG9pmp9hD-gA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_coQzMLvFEeuG9pmp9hD-gA" name="ladrar">
+      <modelElement href="TestUML.uml#_coPlELvFEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_coQzMbvFEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_coQzMrvFEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_t2tZALvBEeuG9pmp9hD-gA" name="Animal">
+    <modelElement href="TestUML.uml#_t2jA8LvBEeuG9pmp9hD-gA"/>
+    <visualProperties xmi:id="_t2tZAbvBEeuG9pmp9hD-gA" position="134.0,98.0" size="191.0,168.0"/>
+    <visibility xmi:id="_t2tZArvBEeuG9pmp9hD-gA" label="+"/>
+    <attributes xmi:id="_5uqecLvBEeuG9pmp9hD-gA" name="string">
+      <modelElement href="TestUML.uml#_5ub08LvBEeuG9pmp9hD-gA"/>
+      <visualProperties xmi:id="_70I9MLvBEeuG9pmp9hD-gA" visible="false"/>
+      <visibility xmi:id="_5uqecbvBEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_5uqecrvBEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_5uqec7vBEeuG9pmp9hD-gA" name="sexo">
+        <modelElement href="TestUML.uml#_5udDELvBEeuG9pmp9hD-gA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_83yykLvBEeuG9pmp9hD-gA" name="sexo">
+      <modelElement href="TestUML.uml#_83w9YLvBEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_83yykbvBEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_83yykrvBEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_83yyk7vBEeuG9pmp9hD-gA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_ujCooLvDEeuG9pmp9hD-gA" name="peso">
+      <modelElement href="TestUML.uml#_ujBagLvDEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_ujCoobvDEeuG9pmp9hD-gA" label="-"/>
+      <cardinality xmi:id="_ujCoorvDEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+      <type xmi:id="_ujCoo7vDEeuG9pmp9hD-gA" name="float">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_AiGhILvCEeuG9pmp9hD-gA" name="morder">
+      <modelElement href="TestUML.uml#_AiEr8LvCEeuG9pmp9hD-gA"/>
+      <visibility xmi:id="_AiGhIbvCEeuG9pmp9hD-gA" label="+"/>
+      <cardinality xmi:id="_AiGhIrvCEeuG9pmp9hD-gA" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

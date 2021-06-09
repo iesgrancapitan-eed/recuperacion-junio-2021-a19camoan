@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_koxp0LvBEeuG9pmp9hD-gA" name="TestUML">
+    <eAnnotations xmi:id="_O2nvoLvCEeuG9pmp9hD-gA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_O2nvobvCEeuG9pmp9hD-gA" source="codegen">
+        <details xmi:id="_O2nvorvCEeuG9pmp9hD-gA" key="AssociatedSourceCode" value="/TestUML/generated/Animal.java;3898224071/1;/TestUML/generated/Perro.java;1971038907/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_5DxuYLvBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_5DxuYbvBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_5DxuYrvBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_5DxuY7vBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_5DxuZLvBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_5DyVcLvBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_5DyVcbvBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_5DyVcrvBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_5GS24LvBEeuG9pmp9hD-gA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_t2jA8LvBEeuG9pmp9hD-gA" name="Animal">
+      <ownedAttribute xmi:id="_5ub08LvBEeuG9pmp9hD-gA" name="string" type="_5udDELvBEeuG9pmp9hD-gA"/>
+      <ownedAttribute xmi:id="_83w9YLvBEeuG9pmp9hD-gA" name="sexo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ujBagLvDEeuG9pmp9hD-gA" name="peso" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_AiEr8LvCEeuG9pmp9hD-gA" name="morder"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_5udDELvBEeuG9pmp9hD-gA" name="sexo"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_f5P4QLvEEeuG9pmp9hD-gA" name="Perro">
+      <ownedAttribute xmi:id="_eOrXYLvFEeuG9pmp9hD-gA" name="raza">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_coPlELvFEeuG9pmp9hD-gA" name="ladrar"/>
+    </packagedElement>
+    <profileApplication xmi:id="_5udqILvBEeuG9pmp9hD-gA">
+      <eAnnotations xmi:id="_5ugtcLvBEeuG9pmp9hD-gA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:UnresolvedElement xmi:id="_5ukX0LvBEeuG9pmp9hD-gA" base_Element="_5udDELvBEeuG9pmp9hD-gA"/>
+</xmi:XMI>
