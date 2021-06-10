@@ -20,4 +20,4 @@ Realiza el siguiente tutorial: [Java Debugging with Eclipse - Tutorial](https://
 
 [Código](./Video.java)
 
-[Vídeo]()
+[Vídeo](https://www.youtube.com/watch?v=LxNgwM1PDIE)
